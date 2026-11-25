@@ -1,0 +1,8 @@
+// Klipper state: Ready
+// Power loss module not detected, Power resume has been disabled
+File opened:print.gcode Size:4794
+File selected
+// Success: Changed main state to PRINTING
+// Excluding object B
+!! Move out of range on Y axis: 35.000 450.500 1.200 [54.288]
+// Klipper state: Disconnect

@@ -1,0 +1,3536 @@
+11-25 18:39:32.417:asyncfilereader: read thread started (tid=137904573204160)
+11-25 18:39:32.417:orjson not available; large JSON will hold GIL longer
+11-25 18:39:32.417:Starting Klippy...
+11-25 18:39:32.491:Args: ['/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/klippy.py', '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/printer.cfg', '-i', '/dev/stdin', '-o', '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/mcu.out', '-v', '-l', '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klippy.log', '-d', '/opt/dicts/at32f403a_config.dict', '-d', 'e0=/opt/dicts/at32f415_config.dict', '-d', 'e1=/opt/dicts/at32f415_config.dict', '-d', 'e2=/opt/dicts/at32f415_config.dict', '-d', 'e3=/opt/dicts/at32f415_config.dict']
+Git version: 'v1.1.0-17-g32d5e89'
+Branch: main
+Remote: origin
+Tracked URL: https://github.com/DesignMaster-Solutions/u1-fixpack.git
+CPU: 4 core AMD EPYC 9D25 126-Core Processor
+Python: '3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]'
+11-25 18:39:32.497:mlock-code-pages: locked 8192 KiB (40 mappings failed)
+
+11-25 18:39:32.497:code pages locked in RAM: 8192 KiB
+11-25 18:39:32.497:start args: {'config_file': '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/printer.cfg', 'apiserver': None, 'start_reason': 'startup', 'factory_mode': False, 'minor_core': {2, 3}, 'debuginput': '/dev/stdin', 'gcode_fd': 3, 'debugoutput': '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/mcu.out', 'dictionary': '/opt/dicts/at32f403a_config.dict', 'dictionary_e0': '/opt/dicts/at32f415_config.dict', 'dictionary_e1': '/opt/dicts/at32f415_config.dict', 'dictionary_e2': '/opt/dicts/at32f415_config.dict', 'dictionary_e3': '/opt/dicts/at32f415_config.dict', 'log_file': '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klippy.log', 'software_version': 'v1.1.0-17-g32d5e89', 'cpu_info': '4 core AMD EPYC 9D25 126-Core Processor'}
+11-25 18:39:32.566:Start printer at Wed Nov 25 18:39:32 2026 (1795631972.6 6845.3)
+11-25 18:39:32.567:Setting main MCU power ON
+11-25 18:39:32.770:Setting extruder power ON
+11-25 18:39:32.973:Can't read autosave from config file - modifications after header
+11-25 18:39:33.000:===== Config file =====
+[dryrun_tracer]
+
+[virtual_sdcard]
+path = /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/gcodes
+on_error_gcode = CANCEL_PRINT
+
+[pause_resume]
+recover_velocity = 35.
+
+[display_status]
+
+[respond]
+
+[gcode_macro M600]
+gcode = 
+	PAUSE
+
+[gcode_macro T4]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=4
+
+[gcode_macro T5]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=5
+
+[gcode_macro T6]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=6
+
+[gcode_macro T7]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=7
+
+[gcode_macro T8]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=8
+
+[gcode_macro T9]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=9
+
+[gcode_macro T10]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=10
+
+[gcode_macro T11]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=11
+
+[gcode_macro T12]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=12
+
+[gcode_macro T13]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=13
+
+[gcode_macro T14]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=14
+
+[gcode_macro T15]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=15
+
+[gcode_macro T16]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=16
+
+[gcode_macro T17]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=17
+
+[gcode_macro T18]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=18
+
+[gcode_macro T19]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=19
+
+[gcode_macro T20]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=20
+
+[gcode_macro T21]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=21
+
+[gcode_macro T22]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=22
+
+[gcode_macro T23]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=23
+
+[gcode_macro T24]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=24
+
+[gcode_macro T25]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=25
+
+[gcode_macro T26]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=26
+
+[gcode_macro T27]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=27
+
+[gcode_macro T28]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=28
+
+[gcode_macro T29]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=29
+
+[gcode_macro T30]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=30
+
+[gcode_macro T31]
+gcode = 
+	SWITCH_OF_EXTENDED_EXTRUDER INDEX=31
+
+[gcode_macro MOVE_TO_DISCARD_FILAMENT_POSITION]
+gcode = 
+	{% if printer.toolhead.extruder == 'extruder' %}
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER X_OFFSET=3.5 Y_OFFSET=50.5 {rawparams}
+	{% else %}
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER X_OFFSET=-1.5 Y_OFFSET=50.5 {rawparams}
+	{% endif %}
+
+[gcode_macro PRINT_START]
+gcode = 
+	{% for i in range(printer.configfile.settings.printer.max_physical_extruder_num) %}
+	SET_GCODE_VARIABLE MACRO=SM_PRINT_START_LINE_EXTRUDER_{i} VARIABLE=has_finished VALUE=False
+	FLOW_APPLY_CALIBRATE_K EXTRUDER={i}
+	{% endfor %}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder0_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder1_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder2_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder3_temp VALUE=0
+	
+	M84
+	G92 E0
+	M220 S100
+
+[gcode_macro PRINT_PRESTART_CHECK]
+gcode = 
+	{% set auto_feeding_batch = printer['gcode_macro AUTO_FEEDING_BATCH'] | default({}) %}
+	{% set is_doing = auto_feeding_batch.doing | default(False) %}
+	{% if is_doing == True %}
+	{action_raise_error('{"coded": "0003-0531-0000-0021", "msg": "auto feeding batch is in progress, cannot start print", "action": "none"}')}
+	{% endif %}
+
+[gcode_macro PRINT_END]
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set retract = client.cancel_retract | default(5.0) | abs %}
+	{% set move_z_max_heigh = client.move_z_max_heigh | default(270.5) | abs %}
+	
+	
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=doing VALUE=False
+	M220 S100
+	
+	_CLIENT_RETRACT LENGTH={retract}
+	
+	{% set current_pos = printer.gcode_move.gcode_position %}
+	{% set delta_z = 0.0 %}
+	{% if "z" in printer.toolhead.homed_axes %}
+	{% if current_pos.z < 195 %}
+	G90
+	G0 Z200 F2000
+	{% elif current_pos.z < 265 %}
+	G91
+	G0 Z5 F2000
+	{% else %}
+	{% if current_pos.z < move_z_max_heigh - 2.0 %}
+	{% set delta_z = 2.0 %}
+	{% elif current_pos.z < move_z_max_heigh %}
+	{% set delta_z = move_z_max_heigh - current_pos.z %}
+	{% else %}
+	{% set delta_z = 0.0 %}
+	{% endif %}
+	G91
+	G0 Z{delta_z} F2000
+	{% endif %}
+	G90
+	{% else %}
+	RESPOND TYPE=echo MSG='Printer not homed Z'
+	{% endif %}
+	M400
+	INNER_PRINT_END
+	{% if "xy" in printer.toolhead.homed_axes %}
+	SM_PRINT_END_AUTO_UNLOAD_FILAMENT
+	PARK_EXTRUDER
+	G90
+	G0 X5 Y5 F3000
+	{% else %}
+	RESPOND TYPE=echo MSG='Printer not homed XY'
+	{% endif %}
+	
+	TURN_OFF_HEATERS
+	M107
+	M107 P2 S0
+	SET_PURIFIER_MODE MODE=0
+	{% if printer.print_task_config['end_led_turn_off'] == True %}
+	SET_LED LED=cavity_led WHITE=0
+	{% endif %}
+	SET_PAUSE_NEXT_LAYER ENABLE=0
+	SET_PAUSE_AT_LAYER ENABLE=0 LAYER=0
+	M84
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_pause_on_err VALUE=False
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=pos_e_compensation VALUE=False
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout}
+
+[gcode_macro CANCEL_PRINT]
+description = Cancel the actual running print
+rename_existing = CANCEL_PRINT_BASE
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set retract = client.cancel_retract | default(5.0) | abs %}
+	{% set move_z_max_heigh = client.move_z_max_heigh | default(270.5) | abs %}
+	
+	
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=doing VALUE=False
+	M220 S100
+	_CLIENT_RETRACT LENGTH={retract}
+	{% set current_pos = printer.gcode_move.gcode_position %}
+	{% set delta_z = 0.0 %}
+	
+	{% if "z" in printer.toolhead.homed_axes %}
+	{% if current_pos.z < 200 %}
+	G90
+	G0 Z200 F2000
+	{% elif current_pos.z < 265 %}
+	G91
+	G0 Z5 F2000
+	{% else %}
+	{% if current_pos.z < move_z_max_heigh - 2.0 %}
+	{% set delta_z = 2.0 %}
+	{% elif current_pos.z < move_z_max_heigh %}
+	{% set delta_z = move_z_max_heigh - current_pos.z %}
+	{% else %}
+	{% set delta_z = 0.0 %}
+	{% endif %}
+	G91
+	G0 Z{delta_z} F2000
+	{% endif %}
+	G90
+	{% else %}
+	RESPOND TYPE=echo MSG='Printer not homed Z'
+	{% endif %}
+	
+	INNER_PRINT_END
+	CANCEL_PRINT_BASE
+	M400
+	TURN_OFF_HEATERS
+	SET_PURIFIER_MODE MODE=0
+	M107
+	M107 P2 S0
+	
+	
+	
+	SET_PAUSE_NEXT_LAYER ENABLE=0
+	SET_PAUSE_AT_LAYER ENABLE=0 LAYER=0
+	M84
+	TIMELAPSE_STOP
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_pause_on_err VALUE=False
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=pos_e_compensation VALUE=False
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=doing VALUE=False
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout}
+
+[gcode_macro INNER_PAUSE]
+description = Pause the actual running print
+variable_pause_temp = 40
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set move_z_max_heigh = client.move_z_max_heigh | default(270.5) | abs %}
+	
+	
+	
+	{% set extruder = printer[printer.toolhead.extruder].extruder_index %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=last_extruder_index VALUE={extruder}
+	{% set temp = printer[printer.toolhead.extruder].target if printer.toolhead.extruder != '' else 0 %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=last_extruder_temp VALUE={temp}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=extruder0_temp VALUE={printer['extruder'].target}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=extruder1_temp VALUE={printer['extruder1'].target}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=extruder2_temp VALUE={printer['extruder2'].target}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=extruder3_temp VALUE={printer['extruder3'].target}
+	
+	PAUSE_BASE
+	_CLIENT_RETRACT
+	
+	
+	{% if params.ON_ERROR | default(0) | int == 0 %}
+	{% set current_pos = printer.gcode_move.gcode_position %}
+	{% set delta_z = 0.0 %}
+	{% if current_pos.z < move_z_max_heigh - 5.0 %}
+	{% set delta_z = 5.0 %}
+	{% elif current_pos.z < move_z_max_heigh %}
+	{% set delta_z = move_z_max_heigh - current_pos.z %}
+	{% else %}
+	{% set delta_z = 0.0 %}
+	{% endif %}
+	{% if "xyz" in printer.toolhead.homed_axes %}
+	MOVE_TO_DISCARD_FILAMENT_POSITION SPEED=500 ACCEL=10000 Z_OFFSET={delta_z}
+	{% else %}
+	RESPOND TYPE=echo MSG='Printer not homed'
+	{% endif %}
+	{% endif %}
+	
+	{% if params.IS_RUNOUT | default(0) | int != 0 %}
+	{% if "xyz" in printer.toolhead.homed_axes %}
+	{% if printer[printer.toolhead.extruder].target >= 170 %}
+	M109 S{printer[printer.toolhead.extruder].target}
+	M83
+	G1 E10 F150
+	_CLIENT_RETRACT
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	
+	M400
+	
+	{% if printer['print_stats'].state == 'printing' %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=pos_e_compensation VALUE=True
+	{% endif %}
+	
+	{% if printer['extruder'].target > 0 %}
+	M104 S{pause_temp} T0 A0
+	{% endif %}
+	{% if printer['extruder1'].target > 0 %}
+	M104 S{pause_temp} T1 A0
+	{% endif %}
+	{% if printer['extruder2'].target > 0 %}
+	M104 S{pause_temp} T2 A0
+	{% endif %}
+	{% if printer['extruder3'].target > 0 %}
+	M104 S{pause_temp} T3 A0
+	{% endif %}
+	
+	{% if params.IS_RUNOUT | default(0) | int != 0 %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_runout VALUE=1
+	FEEDING_RUNOUT_EVENT_HANDLE EXTRUDER={extruder}
+	
+	{% elif params.ON_ERROR | default(0) | int != 0 %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_pause_on_err VALUE=True
+	
+	{% endif %}
+	
+	
+	M107
+	M107 P2
+	M107 P3
+	
+	
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout_on_pause}
+	
+	
+	GET_POSITION
+	M118 extruder0 temp : {printer['extruder'].target}
+	M118 extruder1 temp : {printer['extruder1'].target}
+	M118 extruder2 temp : {printer['extruder2'].target}
+	M118 extruder3 temp : {printer['extruder3'].target}
+	M118 bed temp : {printer['heater_bed'].target}
+	M118 last extruder index : {last_extruder_index}
+
+[gcode_macro INNER_RESUME]
+description = Resume the actual running print
+variable_last_extruder_index = 0
+variable_last_extruder_temp = 0
+variable_extruder0_temp = 0
+variable_extruder1_temp = 0
+variable_extruder2_temp = 0
+variable_extruder3_temp = 0
+variable_is_pause_on_err = False
+variable_is_runout = 0
+variable_flow_calibrating = False
+variable_flow_calibrate_temp = 220
+variable_pos_e_compensation = False
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set velocity = printer.configfile.settings.pause_resume.recover_velocity %}
+	{% set sp_move = client.speed_move | default(velocity) %}
+	{% set unretract = client.unretract | default(0.0) %}
+	{% set retract = client.retract | default(5.0) | abs %}
+	
+	
+	{% set can_resume = True %}
+	{% set error_id = 522 %}
+	{% set error_index = 0 %}
+	{% set error_code = 0 %}
+	{% set error_message = "resume error" %}
+	{% set is_homed_z_before_paused = True %}
+	{% set is_filament_exist = True %}
+	{% set e_pos = 0 %}
+	{% set is_replenish = params.REPLENISH | default(0) | int %}
+	
+	{% if is_replenish != 0 %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=last_extruder_index VALUE={params.REPLENISH_EXTRUDER}
+	{% set last_extruder_index = params.REPLENISH_EXTRUDER | default(last_extruder_index) | int %}
+	{% endif %}
+	
+	{% if last_extruder_index == 0 %}
+	{% set e_pos = printer['extruder'].printing_e_pos | float | abs %}
+	{% else %}
+	{% set e_pos = printer['extruder%d' % (last_extruder_index)].printing_e_pos | float | abs %}
+	{% endif %}
+	
+	{% if pos_e_compensation %}
+	{% if e_pos >= retract %}
+	{% set e_pos = e_pos - retract %}
+	{% else %}
+	{% set e_pos = 0 %}
+	{% endif %}
+	{% endif %}
+	
+	{% if retract >= e_pos %}
+	{% if unretract >= e_pos %}
+	{% set unretract = unretract - e_pos %}
+	{% else %}
+	{% set unretract = 0 %}
+	{% endif %}
+	{% else %}
+	{% set retract = e_pos + retract - unretract %}
+	{% set unretract = 0 %}
+	{% endif %}
+	
+	{% set runout_sensor_name = "e%d_filament" % (last_extruder_index)  %}
+	{% set runout_sensor = "filament_motion_sensor e%d_filament" % (last_extruder_index) %}
+	
+	{% if "z" not in printer.toolhead.homed_axes %}
+	{% set is_homed_z_before_paused = False %}
+	{% endif %}
+	
+	{% if printer.print_task_config['filament_exist'][last_extruder_index] == False %}
+	{% set is_filament_exist = False %}
+	{% endif %}
+	
+	{% if is_replenish == 0 and is_filament_exist == True %}
+	INNER_CHECK_AND_RELOAD_FILAMENT_INFO EXTRUDER={last_extruder_index} IS_RUNOUT={is_runout}
+	{% endif %}
+	
+	{% set auto_feeding_batch = printer['gcode_macro AUTO_FEEDING_BATCH'] | default({}) %}
+	{% set is_doing = auto_feeding_batch.doing | default(False) %}
+	{% if is_doing == True %}
+	{% set can_resume = False %}
+	{% endif %}
+	
+	{% if is_filament_exist == False %}
+	{% set can_resume = False %}
+	{% endif %}
+	
+	{% if can_resume == True %}
+	{% if is_replenish != 0 %}
+	SET_ACTION_CODE ACTION=PRINT_REPLENISHING
+	{% else %}
+	SET_ACTION_CODE ACTION=PRINT_RESUMING
+	{% endif %}
+	
+	M118 last extruder temp is {last_extruder_temp}, last extruder index is {last_extruder_index}
+	
+	
+	{% if is_pause_on_err or "xy" not in printer.toolhead.homed_axes %}
+	G28 X Y
+	{% endif %}
+	
+	
+	T{last_extruder_index} A0
+	
+	
+	SM_PRINT_AUTO_FEED EXTRUDER={last_extruder_index}
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	
+	{% if is_homed_z_before_paused == True %}
+	
+	G4 P200
+	M400
+	CHECK_FILAMENT_RUNOUT SENSOR={runout_sensor_name}
+	
+	
+	M107
+	M104 S{extruder0_temp} T0 A0
+	M104 S{extruder1_temp} T1 A0
+	M104 S{extruder2_temp} T2 A0
+	M104 S{extruder3_temp} T3 A0
+	
+	
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout_on_pause}
+	
+	{% if extruder0_temp >= 170 %}
+	M109 S{extruder0_temp} T0 A0
+	{% endif %}
+	{% if extruder1_temp >= 170 %}
+	M109 S{extruder1_temp} T1 A0
+	{% endif %}
+	{% if extruder2_temp >= 170 %}
+	M109 S{extruder2_temp} T2 A0
+	{% endif %}
+	{% if extruder3_temp >= 170 %}
+	M109 S{extruder3_temp} T3 A0
+	{% endif %}
+	
+	{% if last_extruder_temp > 170 %}
+	M109 S{last_extruder_temp} T{last_extruder_index} A0
+	INNER_APPLY_FLOW_K EXTRUDER={printer.toolhead.extruder} APPLY=1
+	_CLIENT_EXTRUDE LENGTH=20 SPEED=2
+	INNER_APPLY_FLOW_K EXTRUDER={printer.toolhead.extruder} APPLY=0
+	_CLIENT_RETRACT LENGTH={retract}
+	M400
+	M106 S255
+	{% else %}
+	M106 S255
+	{% if last_extruder_temp < 80 %}
+	M104 S{last_extruder_temp} T{last_extruder_index} A0
+	{% else %}
+	M109 S{last_extruder_temp} T{last_extruder_index} A0
+	{% endif %}
+	{% set unretract = 0.0 %}
+	{% endif %}
+	
+	M204 S10000
+	M106 S255
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	G90
+	G1 Y250 F12000
+	
+	CHECK_FILAMENT_RUNOUT SENSOR={runout_sensor_name}
+	
+	
+	RESUME_BASE VELOCITY={params.VELOCITY | default(sp_move)} MOVE_ACCEL=10000 EXTRUDE={unretract}
+	{% else %}
+	RESUME_BASE VELOCITY={params.VELOCITY | default(sp_move)} MOVE=0
+	{% endif %}
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_pause_on_err VALUE=False
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=pos_e_compensation VALUE=False
+	SET_GCODE_VARIABLE MACRO=INNER_RESUME VARIABLE=is_runout VALUE=0
+	{% else %}
+	{% if is_filament_exist == False %}
+	{% set error_id = 523 %}
+	{% set error_index = last_extruder_index %}
+	{% set error_code = 0 %}
+	{% set error_message = "e%d filament runout" % (last_extruder_index) %}
+	{% elif is_doing == True %}
+	{% set error_id = 531 %}
+	{% set error_index = 0 %}
+	{% set error_code = 20 %}
+	{% set error_message = "!! auto feeding batch doing!" %}
+	{% else %}
+	{% set error_id = 522 %}
+	{% set error_index = 0 %}
+	{% set error_code = 0 %}
+	{% set error_message = "resume error" %}
+	{% endif %}
+	RAISE_EXCEPTION ID={error_id} INDEX={error_index} CODE={error_code} MSG='{"%s" % error_message}' LEVEL=2
+	{% endif %}
+	SET_ACTION_CODE ACTION=IDLE
+
+[gcode_macro SET_PAUSE_NEXT_LAYER]
+description = Enable a pause if the next layer is reached
+gcode = 
+	{% set pause_next_layer = printer['gcode_macro SET_PRINT_STATS_INFO'].pause_next_layer %}
+	{% set ENABLE = params.ENABLE | default(1)|int != 0 %}
+	{% set MACRO = params.MACRO | default(pause_next_layer.call, True) %}
+	SET_GCODE_VARIABLE MACRO=SET_PRINT_STATS_INFO VARIABLE=pause_next_layer VALUE="{{ 'enable': ENABLE, 'call': MACRO }}"
+
+[gcode_macro SET_PAUSE_AT_LAYER]
+description = Enable/disable a pause if a given layer number is reached
+gcode = 
+	{% set pause_at_layer = printer['gcode_macro SET_PRINT_STATS_INFO'].pause_at_layer %}
+	{% set ENABLE = params.ENABLE | int != 0 if params.ENABLE is defined
+	else params.LAYER is defined %}
+	{% set LAYER = params.LAYER | default(pause_at_layer.layer) | int %}
+	{% set MACRO = params.MACRO | default(pause_at_layer.call, True) %}
+	SET_GCODE_VARIABLE MACRO=SET_PRINT_STATS_INFO VARIABLE=pause_at_layer VALUE="{{ 'enable': ENABLE, 'layer': LAYER, 'call': MACRO }}"
+
+[gcode_macro SET_PRINT_STATS_INFO]
+rename_existing = SET_PRINT_STATS_INFO_BASE
+description = Overwrite, to get pause_next_layer and pause_at_layer feature
+variable_pause_next_layer = { 'enable': False, 'call': "PAUSE" }
+variable_pause_at_layer = { 'enable': False, 'layer': 0, 'call': "PAUSE" }
+gcode = 
+	{% if pause_next_layer.enable %}
+	RESPOND TYPE=echo MSG='{"%s, forced by pause_next_layer" % pause_next_layer.call}'
+	{pause_next_layer.call}
+	SET_PAUSE_NEXT_LAYER ENABLE=0
+	{% elif pause_at_layer.enable and params.CURRENT_LAYER is defined and params.CURRENT_LAYER | int == pause_at_layer.layer %}
+	RESPOND TYPE=echo MSG='{"%s, forced by pause_at_layer [%d]" % (pause_at_layer.call, pause_at_layer.layer)}'
+	{pause_at_layer.call}
+	SET_PAUSE_AT_LAYER ENABLE=0
+	{% endif %}
+	SET_PRINT_STATS_INFO_BASE {rawparams}
+
+[gcode_macro _CLIENT_EXTRUDE]
+description = Extrudes, if the extruder is hot enough
+gcode = 
+	
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set use_fw_retract = (client.use_fw_retract | default(false) | lower == 'true') and (printer.firmware_retraction is defined) %}
+	{% set length = params.LENGTH | default(client.unretract) | default(1.0) | float %}
+	{% set speed = params.SPEED | default(client.speed_unretract) | default(35) %}
+	{% set absolute_extrude = printer.gcode_move.absolute_extrude %}
+	
+	{% if printer.toolhead.extruder != '' %}
+	{% if printer[printer.toolhead.extruder].can_extrude %}
+	{% if use_fw_retract %}
+	{% if length < 0 %}
+	G10
+	{% else %}
+	G11
+	{% endif %}
+	{% else %}
+	M83
+	G1 E{length} F{(speed | float | abs) * 60}
+	{% if absolute_extrude %}
+	M82
+	{% endif %}
+	{% endif %}
+	{% else %}
+	RESPOND TYPE=echo MSG='{"\"%s\" not hot enough" % printer.toolhead.extruder}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro _CLIENT_RETRACT]
+description = Retracts, if the extruder is hot enough
+gcode = 
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set length = params.LENGTH | default(client.retract) | default(1.0) | float %}
+	{% set speed = params.SPEED | default(client.speed_retract) | default(35) %}
+	
+	_CLIENT_EXTRUDE LENGTH=-{length | float | abs} SPEED={speed | float | abs}
+
+[gcode_macro INNER_FILAMENT_UNLOAD]
+gcode = 
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	{% set temp = params.TEMP | default(250) | int %}
+	{% set soft = params.SOFT | default(0) | int %}
+	
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M109 S{temp}
+	CONTROL_RETRACT_ACTION SOFT={soft}
+	M400
+	M104 S0
+	M106 S255
+	G4 P5000
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=2
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	M107
+
+[gcode_macro AUTO_FEEDING]
+gcode = 
+	{% set filament_feed_vars = printer['gcode_macro _FILAMENT_FEED_VARIABLE'] | default({}) %}
+	{% set extruder = params.EXTRUDER | default(999) | int %}
+	{% if filament_feed_vars != {} and
+	extruder >= 0 and
+	extruder < printer.configfile.settings.printer.max_physical_extruder_num %}
+	{% set feed_module_seq = filament_feed_vars.module_sequence[extruder] %}
+	{% set feed_channel_seq = filament_feed_vars.channel_sequence[extruder] %}
+	FEED_AUTO MODULE={feed_module_seq} CHANNEL={feed_channel_seq} {rawparams}
+	{% else %}
+	{% if filament_feed_vars == {} %}
+	RESPOND TYPE=error MSG='{"gcode_macro _FILAMENT_FEED_VARIABLE error!"}'
+	{% else %}
+	RESPOND TYPE=error MSG='{"extruder error: %d!" % (extruder)}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro AUTO_FEEDING_PREHEAT]
+gcode = 
+	{% set default_extruder = printer[printer.toolhead.extruder].extruder_index %}
+	{% set extruder = params.EXTRUDER | default(default_extruder) | int %}
+	{% set delta = params.DELTA | default(-90) | float %}
+	{% if params.TEMP is defined %}
+	{% set temp = params.TEMP | default(140)| float %}
+	INNER_HEAT_TO_LOADED_FILAMENT_TEMP S={temp} T={extruder} A=0 DELTA={delta}
+	{% else %}
+	INNER_HEAT_TO_LOADED_FILAMENT_TEMP T={extruder} A=0 DELTA={delta}
+	{% endif %}
+
+[gcode_macro MANUAL_FEEDING]
+gcode = 
+	{% set filament_feed_vars = printer['gcode_macro _FILAMENT_FEED_VARIABLE'] | default({}) %}
+	{% set extruder = params.EXTRUDER | default(999) | int %}
+	{% if filament_feed_vars != {} and
+	extruder >= 0 and
+	extruder < printer.configfile.settings.printer.max_physical_extruder_num %}
+	{% set feed_module_seq = filament_feed_vars.module_sequence[extruder] %}
+	{% set feed_channel_seq = filament_feed_vars.channel_sequence[extruder] %}
+	FEED_MANUAL MODULE={feed_module_seq} CHANNEL={feed_channel_seq} {rawparams}
+	{% else %}
+	{% if filament_feed_vars == {} %}
+	RESPOND TYPE=error MSG='{"gcode_macro _FILAMENT_FEED_VARIABLE error!"}'
+	{% else %}
+	RESPOND TYPE=error MSG='{"extruder error: %d!" % (extruder)}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro FEEDING_RUNOUT_EVENT_HANDLE]
+gcode = 
+	{% set filament_feed_vars = printer['gcode_macro _FILAMENT_FEED_VARIABLE'] | default({}) %}
+	{% set extruder = params.EXTRUDER | default(999) | int %}
+	{% if filament_feed_vars != {} and
+	extruder >= 0 and
+	extruder < printer.configfile.settings.printer.max_physical_extruder_num %}
+	{% set feed_module_seq = filament_feed_vars.module_sequence[extruder] %}
+	{% set feed_channel_seq = filament_feed_vars.channel_sequence[extruder] %}
+	FEED_RUNOUT_EVENT_HANDLE MODULE={feed_module_seq} CHANNEL={feed_channel_seq}
+	{% else %}
+	{% if filament_feed_vars == {} %}
+	RESPOND TYPE=error MSG='{"gcode_macro _FILAMENT_FEED_VARIABLE error!"}'
+	{% else %}
+	RESPOND TYPE=error MSG='{"extruder error: %d!" % (extruder)}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro ROUGHLY_CLEAN_NOZZLE]
+gcode = 
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD {rawparams}
+
+[gcode_macro ROUGHLY_CLEAN_NOZZLE_WITH_DISCARD]
+gcode = 
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+
+[gcode_macro FINELY_CLEAN_NOZZLE_STAGE_1]
+gcode = 
+	M204 S10000
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	G91
+	{% if printer.toolhead.extruder == 'extruder' %}
+	G0 Y26.5
+	{% else %}
+	G0 X-2 Y26.5
+	{% endif %}
+	
+	
+	
+	PROBE_BED_CONTACT
+	G91
+	G0 X-1 Y1 F500
+	G0 X-1 Y-1
+	G0 X1.25 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 Y-0.8
+	G0 X6
+
+[gcode_macro FINELY_CLEAN_NOZZLE_STAGE_2]
+gcode = 
+	M204 S10000
+	G90
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	G91
+	{% if printer.toolhead.extruder == 'extruder' %}
+	G0 X-10 Y26.5
+	{% else %}
+	G0 X7 Y26.5
+	{% endif %}
+	
+	
+	
+	PROBE_BED_CONTACT
+	G91
+	G0 X-1 Y1 F500
+	G0 X-1 Y-1
+	G0 X1.25 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 X1 Y-0.5
+	G0 X-1.5 Y1.5
+	G0 X-0.5 Y-1
+	G0 Y-0.8
+	G0 X6
+
+[gcode_macro SM_PRINT_CHECK_SWITCH_EXTRUDER]
+gcode = 
+	SET_ACTION_CODE ACTION=PRINT_SWITCH_CHECKING
+	{% for i in range(printer.configfile.settings.printer.max_physical_extruder_num) %}
+	{% if printer.print_task_config['extruders_used'][i] %}
+	T{i} A0
+	{% endif %}
+	{% endfor %}
+	SET_ACTION_CODE ACTION=IDLE
+
+[gcode_macro SM_PRINT_EXTRUDER_PREHEAT]
+gcode = 
+	{% set extruder = params.EXTRUDER | default(999) | int %}
+	{% set temp = params.TEMP | default(140) | int %}
+	{% if extruder >= 0 and
+	extruder < printer.configfile.settings.printer.max_physical_extruder_num
+	and printer.print_task_config['extruders_used'][extruder] %}
+	M104 S{temp} T{extruder} A0
+	{% endif %}
+
+[gcode_macro SM_PRINT_AUTO_FEED]
+gcode = 
+	{% set filament_feed_vars = printer['gcode_macro _FILAMENT_FEED_VARIABLE'] | default({}) %}
+	{% set extruder = params.EXTRUDER | default(999) | int %}
+	{% if filament_feed_vars != {} and
+	extruder >= 0 and
+	extruder < printer.configfile.settings.printer.max_physical_extruder_num %}
+	{% if printer.print_task_config['extruders_used'][extruder] %}
+	{% set feed_module_seq = filament_feed_vars.module_sequence[extruder] %}
+	{% set feed_channel_seq = filament_feed_vars.channel_sequence[extruder] %}
+	FEED_AUTO MODULE={feed_module_seq} CHANNEL={feed_channel_seq} LOAD=1 PRINTING=1 {rawparams}
+	{% endif %}
+	{% else %}
+	{% if filament_feed_vars == {} %}
+	RESPOND TYPE=error MSG='{"gcode_macro _FILAMENT_FEED_VARIABLE error!"}'
+	{% else %}
+	RESPOND TYPE=error MSG='{"extruder error: %d!" % (extruder)}'
+	{% endif %}
+	{% endif %}
+
+[gcode_macro SM_PRINT_END_AUTO_UNLOAD_FILAMENT]
+gcode = 
+	{% for i in range(printer.configfile.settings.printer.max_physical_extruder_num) %}
+	{% if printer.print_task_config['extruders_used'][i] and
+	printer.print_task_config['filament_soft'][i] == False and
+	printer.print_task_config['end_unload_filament'][i] == True %}
+	AUTO_FEEDING EXTRUDER={i} UNLOAD=1 STAGE=prepare
+	AUTO_FEEDING EXTRUDER={i} UNLOAD=1 STAGE=doing
+	{% endif %}
+	{% endfor %}
+
+[gcode_macro SM_PRINT_START_LINE]
+gcode = 
+	{% set index = params.INDEX | default(999) | int %}
+	{% set target_temp = params.TARGET_TEMP | default(0) | int %}
+	
+	{% if index >= 0 and index < 8 and target_temp != 0 %}
+	G90
+	G0 Z3 F5000
+	{% if printer.print_task_config['extruder_map_table'][index] == 0 %}
+	SM_PRINT_START_LINE_EXTRUDER_0 {rawparams}
+	{% elif printer.print_task_config['extruder_map_table'][index] == 1 %}
+	SM_PRINT_START_LINE_EXTRUDER_1 {rawparams}
+	{% elif printer.print_task_config['extruder_map_table'][index] == 2 %}
+	SM_PRINT_START_LINE_EXTRUDER_2 {rawparams}
+	{% elif printer.print_task_config['extruder_map_table'][index] == 3 %}
+	SM_PRINT_START_LINE_EXTRUDER_3 {rawparams}
+	{% endif %}
+	{% endif %}
+
+[gcode_macro SM_PRINT_START_LINE_EXTRUDER_0]
+variable_has_finished = False
+gcode = 
+	{% set target_temp = params.TARGET_TEMP | default(250) | int %}
+	
+	{% if has_finished == False %}
+	T0 A0
+	G90
+	G0 X10 Y3 Z2 F18000
+	M109 S{target_temp}
+	G1 Z0.2
+	G91
+	M83
+	G1 X40 E15 F360
+	G0 E-0.5
+	G90
+	G1 Z3
+	SET_GCODE_VARIABLE MACRO=SM_PRINT_START_LINE_EXTRUDER_0 VARIABLE=has_finished VALUE=True
+	{% endif %}
+
+[gcode_macro SM_PRINT_START_LINE_EXTRUDER_1]
+variable_has_finished = False
+gcode = 
+	{% set target_temp = params.TARGET_TEMP | default(250) | int %}
+	
+	{% if has_finished == False %}
+	T1 A0
+	G90
+	G0 X60 Y3 Z2 F18000
+	M109 S{target_temp}
+	G1 Z0.2
+	G91
+	M83
+	G1 X40 E15 F360
+	G0 E-0.5
+	G90
+	G1 Z3
+	SET_GCODE_VARIABLE MACRO=SM_PRINT_START_LINE_EXTRUDER_1 VARIABLE=has_finished VALUE=True
+	{% endif %}
+
+[gcode_macro SM_PRINT_START_LINE_EXTRUDER_2]
+variable_has_finished = False
+gcode = 
+	{% set target_temp = params.TARGET_TEMP | default(250) | int %}
+	
+	{% if has_finished == False %}
+	T2 A0
+	G90
+	G0 X110 Y3 Z2 F18000
+	M109 S{target_temp}
+	G1 Z0.2
+	G91
+	M83
+	G1 X40 E15 F360
+	G0 E-0.5
+	G90
+	G1 Z3
+	SET_GCODE_VARIABLE MACRO=SM_PRINT_START_LINE_EXTRUDER_2 VARIABLE=has_finished VALUE=True
+	{% endif %}
+
+[gcode_macro SM_PRINT_START_LINE_EXTRUDER_3]
+variable_has_finished = False
+gcode = 
+	{% set target_temp = params.TARGET_TEMP | default(250) | int %}
+	
+	{% if has_finished == False %}
+	T3 A0
+	G90
+	G0 X160 Y3 Z2 F18000
+	M109 S{target_temp}
+	G1 Z0.2
+	G91
+	M83
+	G1 X40 E15 F360
+	G0 E-0.5
+	G90
+	G1 Z3
+	SET_GCODE_VARIABLE MACRO=SM_PRINT_START_LINE_EXTRUDER_3 VARIABLE=has_finished VALUE=True
+	{% endif %}
+
+[gcode_macro INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD]
+gcode = 
+	{% set accel = params.ACCEL | default(10000) | int %}
+	{% set speed = params.SPEED | default(10000) | int %}
+	{% set action = params.ACTION | default(4) | int %}
+	
+	G91
+	M204 S{accel}
+	G1 F{speed}
+	
+	{% if printer.toolhead.extruder == 'extruder' %}
+	G1 Y10
+	{% if action == 1 %}
+	G1 X-1 Y15
+	G1 X-4 Y-10
+	G1 X5 Y-5
+	{% elif action == 2 %}
+	G1 X-5 Y10
+	G1 X1 Y5
+	G1 X4 Y-15
+	{% elif action == 3 %}
+	G1 X-1 Y15
+	G1 X-2 Y-15
+	G1 X-2 Y15
+	G1 X5 Y-15
+	{% else %}
+	G1 X-1 Y15
+	G1 Y-15
+	G1 X-1 Y15
+	G1 Y-15
+	G1 X-1 Y15
+	G1 Y-15
+	G1 X-1 Y15
+	G1 X-1 Y-8
+	G1 X5 Y-7
+	{% endif %}
+	G1 Y-10
+	{% else %}
+	G1 Y10
+	{% if action == 1 %}
+	G1 X1 Y15
+	G1 X4 Y-10
+	G1 X-5 Y-5
+	{% elif action == 2 %}
+	G1 X5 Y10
+	G1 X-1 Y5
+	G1 X-4 Y-15
+	{% elif action == 3 %}
+	G1 X1 Y15
+	G1 X2 Y-15
+	G1 X2 Y15
+	G1 X-5 Y-15
+	{% else %}
+	G1 X1 Y15
+	G1 Y-15
+	G1 X1 Y15
+	G1 Y-15
+	G1 X1 Y15
+	G1 Y-15
+	G1 X1 Y15
+	G1 X1 Y-8
+	G1 X-5 Y-7
+	{% endif %}
+	G1 Y-10
+	{% endif %}
+
+[gcode_macro INNER_DISCARD_FILAMENT_BASE_DISCARD]
+variable_random_pos = 1
+gcode = 
+	{% set accel = params.ACCEL | default(10000) | int %}
+	{% set speed = params.SPEED | default(5000) | int %}
+	{% set random_position = random_pos % 6 %}
+	{% set discard_position = 5.5 + random_position * 0.5 %}
+	G91
+	M204 S{accel}
+	G1 F{speed}
+	G1 Y-{discard_position}
+	{% if printer.toolhead.extruder == 'extruder' %}
+	G1 X-10
+	G1 X10
+	G1 X-10
+	G1 X10
+	{% else %}
+	G1 X10
+	G1 X-10
+	G1 X10
+	G1 X-10
+	{% endif %}
+	G1 Y{discard_position}
+	SET_GCODE_VARIABLE MACRO=INNER_DISCARD_FILAMENT_BASE_DISCARD VARIABLE=random_pos VALUE={random_pos + 1}
+
+[gcode_macro INNER_CUTOFF_BASE_DISCARD]
+gcode = 
+	{% set accel = params.ACCEL | default(10000) | int %}
+	{% set speed = params.SPEED | default(5000) | int %}
+	
+	G91
+	M204 S{accel}
+	G1 F{speed}
+	G1 Y-1
+	{% if printer.toolhead.extruder == 'extruder' %}
+	G1 X-9.5
+	G1 X9.5
+	G1 X-9.5
+	G1 X9.5
+	G1 X-9.5
+	G1 X9.5
+	{% else %}
+	G1 X9.5
+	G1 X-9.5
+	G1 X9.5
+	G1 X-9.5
+	G1 X9.5
+	G1 X-9.5
+	{% endif %}
+	G1 Y1
+
+[gcode_macro INNER_FLUSH_FILAMENT]
+gcode = 
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	{% set soft = params.SOFT | default(0) | int %}
+	{% set temp = params.TEMP | default(250) | int %}
+	{% set speed_default = 360 if soft == 0 else 200 %}
+	{% if nozzle_diameter < 0.3 %}
+	{% set speed_default = 210 if soft == 0 else 60 %}
+	{% endif %}
+	{% set speed = params.SPEED | default(speed_default) | int %}
+	{% set length = params.LENGTH | default(80.0) | float %}
+	{% set retract_length_default = 5.0 if soft == 0 else 2.0 %}
+	{% set retract_length = params.RETRACT_LENGTH | default(retract_length_default) | float %}
+	{% set e_pos = printer[printer.toolhead.extruder].printing_e_pos | float | abs %}
+	{% if printer['print_stats'].state == 'paused' or printer['print_stats'].state == 'printing' %}
+	{% set retract_length = e_pos %}
+	{% endif %}
+	
+	M106 S255
+	G4 P5000
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=1
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	M107
+	M400
+	M109 S{temp}
+	M83
+	G1 E{length} F{speed}
+	M400
+	M104 S0
+	M106 S255
+	_CLIENT_RETRACT LENGTH={retract_length}
+	M400
+	G4 P5000
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=2
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	M107
+
+[gcode_macro INNER_MANUAL_FEED_STAGE_PREPARE]
+gcode = 
+	{% set is_paused = True if printer['print_stats'].state == 'paused' else False %}
+	{% if is_paused == False %}
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout_on_pause}
+	{% endif %}
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+
+[gcode_macro INNER_MANUAL_FEED_STAGE_EXTRUDE]
+gcode = 
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	{% set soft = params.SOFT | default(0) | int %}
+	{% set temp = params.TEMP | default(250) | int %}
+	{% set speed_default = 360 if soft == 0 else 200 %}
+	{% if nozzle_diameter < 0.3 %}
+	{% set speed_default = 210 if soft == 0 else 60 %}
+	{% endif %}
+	{% set speed = params.SPEED | default(speed_default) | int %}
+	M109 S{temp}
+	M83
+	G1 E70 F{speed}
+
+[gcode_macro INNER_MANUAL_FEED_STAGE_FLUSH]
+gcode = 
+	INNER_FLUSH_FILAMENT {rawparams}
+
+[gcode_macro INNER_MANUAL_FEED_STAGE_FINISH]
+gcode = 
+	{% set is_paused = True if printer['print_stats'].state == 'paused' else False %}
+	M104 S0
+	M107
+	{% if is_paused == False %}
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout}
+	{% endif %}
+
+[gcode_macro INNER_MANUAL_FEED_STAGE_CANCEL]
+gcode = 
+	{% set is_paused = True if printer['print_stats'].state == 'paused' else False %}
+	M104 S0
+	M106 S255
+	G4 P5000
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=3
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	M107
+	{% if is_paused == False %}
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout}
+	{% endif %}
+
+[gcode_macro INNER_FLOW_MEASURE_END_BASE_DISCARD]
+gcode = 
+	G4
+	M106 S255
+	
+	M104 S170
+	G4 P3000
+	M107
+	
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=1
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+
+[gcode_macro INNER_FLOW_CALIB_END_BASE_DISCARD]
+gcode = 
+	M106 S255
+	
+	M109 S170
+	M107
+	
+	M104 S0
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=3
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+
+[gcode_macro INNER_PREEXTRUDE_FILAMENT]
+gcode = 
+	{% set temp = params.TEMP | default(220) | int %}
+	{% set speed = params.SPEED | default(360) | float %}
+	{% set length = params.LENGTH | default(20) | float %}
+	{% set retract_length = params.RETRACT_LENGTH | default(0.5) | abs %}
+	{% set filament_soft = params.SOFT | default(False) %}
+	{% if filament_soft == True %}
+	{% set speed = 120 %}
+	{% set length = 10 %}
+	{% endif %}
+	SAVE_GCODE_STATE NAME=preextrude
+	SET_ACTION_CODE ACTION=PRINT_PREEXTRUDING
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M204 S10000
+	M109 S{temp}
+	M83
+	INNER_APPLY_FLOW_K EXTRUDER={printer.toolhead.extruder} APPLY=1
+	G1 E{length} F{speed}
+	INNER_APPLY_FLOW_K EXTRUDER={printer.toolhead.extruder} APPLY=0
+	G1 E-{retract_length}
+	M400
+	M106 S255
+	G4 P5000
+	M400
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=4
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	M107
+	RESTORE_GCODE_STATE NAME=preextrude
+	SET_ACTION_CODE ACTION=IDLE
+
+[gcode_macro INNER_DETECT_NOZZLE_STAGE_1]
+gcode = 
+	{% set retract_e = params.RETRACT | default(0) %}
+	SAVE_GCODE_STATE NAME=DETECT_NOZZLE
+	{% if retract_e != 0 %}
+	_CLIENT_RETRACT
+	{% endif %}
+	G91
+	M204 S10000
+	G1 Z2 F2000
+	G90
+	G1 X195 Y16 F30000
+	M400
+
+[gcode_macro INNER_DETECT_NOZZLE_STAGE_2]
+gcode = 
+	{% set client = printer['gcode_macro _CLIENT_VARIABLE'] | default({}) %}
+	{% set retract = client.cancel_retract | default(5.0) | abs %}
+	{% set extrude_e = params.EXTRUDE | default(0) %}
+	{% set pos_x = params.X | default(9999999) | float %}
+	{% set pos_y = params.Y | default(9999999) | float %}
+	{% set pos_z = params.Z | default(9999999) | float %}
+	
+	{% if pos_x < 9999990 and pos_y < 9999990 and pos_z < 9999990 %}
+	G90
+	G1 X{pos_x} Y{pos_y} F30000
+	
+	{% if extrude_e != 0 %}
+	_CLIENT_EXTRUDE
+	{% endif %}
+	RESTORE_GCODE_STATE NAME=DETECT_NOZZLE
+	{% endif %}
+
+[gcode_macro CONTROL_EXTRUDE_ACTION]
+gcode = 
+	{% set extruder_default = printer[printer.toolhead.extruder].extruder_index %}
+	{% set extruder_index = params.EXTRUDER | default(extruder_default) | int %}
+	{% set nozzle_diameter = printer[printer.toolhead.extruder].nozzle_diameter %}
+	{% set nozzle_volume_type = printer[printer.toolhead.extruder].nozzle_volume_type %}
+	{% if extruder_index == 0 %}
+	{% set nozzle_diameter = printer['extruder'].nozzle_diameter %}
+	{% set nozzle_volume_type = printer['extruder'].nozzle_volume_type %}
+	{% else %}
+	{% set nozzle_diameter = printer['extruder%d' % (extruder_index)].nozzle_diameter %}
+	{% set nozzle_volume_type = printer['extruder%d' % (extruder_index)].nozzle_volume_type %}
+	{% endif %}
+	{% set filament_soft = False %}
+	{% if printer.print_task_config['filament_soft'][extruder_index] == True %}
+	{% set filament_soft = True %}
+	{% endif %}
+	
+	{% if nozzle_diameter < 0.3 %}
+	{% if filament_soft == True %}
+	M83
+	G1 E30 F60
+	{% else %}
+	M83
+	G1 E30 F210
+	{% endif %}
+	{% else %}
+	{% if filament_soft == True %}
+	M83
+	G1 E30 F200
+	{% else %}
+	M83
+	G1 E30 F300
+	{% endif %}
+	{% endif %}
+
+[gcode_macro CONTROL_RETRACT_ACTION]
+gcode = 
+	{% set only_retract = params.ONLY_RETRACT | default(0) | int %}
+	{% set extruder_default = printer[printer.toolhead.extruder].extruder_index %}
+	{% set extruder_index = params.EXTRUDER | default(extruder_default) | int %}
+	{% set nozzle_diameter = printer[printer.toolhead.extruder].nozzle_diameter %}
+	{% set nozzle_volume_type = printer[printer.toolhead.extruder].nozzle_volume_type %}
+	{% if extruder_index == 0 %}
+	{% set nozzle_diameter = printer['extruder'].nozzle_diameter %}
+	{% set nozzle_volume_type = printer['extruder'].nozzle_volume_type %}
+	{% else %}
+	{% set nozzle_diameter = printer['extruder%d' % (extruder_index)].nozzle_diameter %}
+	{% set nozzle_volume_type = printer['extruder%d' % (extruder_index)].nozzle_volume_type %}
+	{% endif %}
+	{% set filament_soft = 0 %}
+	{% if printer.print_task_config['filament_soft'][extruder_index] == True %}
+	{% set filament_soft = 1 %}
+	{% endif %}
+	{% set filament_soft = params.SOFT | default(filament_soft) | int %}
+	{% set filament_main_type = printer.print_task_config['filament_type'][extruder_index] %}
+	{% set filament_sub_type = printer.print_task_config['filament_sub_type'][extruder_index] %}
+	
+	{% if only_retract == 0 %}
+	{% if nozzle_volume_type == 'high_flow' %}
+	{% if nozzle_diameter >= 0.1999 and nozzle_diameter <= 0.2001 %}
+	{% if filament_soft != 0 %}
+	M83
+	G1 E5 F60
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F210
+	G1 E3 F300
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% else %}
+	{% if filament_soft != 0 %}
+	M83
+	G1 E5 F600
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F400
+	G1 E3 F1500
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% endif %}
+	{% else %}
+	{% if nozzle_diameter >= 0.1999 and nozzle_diameter <= 0.2001 %}
+	{% if filament_main_type == 'PLA' or
+	filament_main_type == 'PETG' %}
+	M83
+	G1 E20 F210
+	G1 E10 F300
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F1000
+	G1 E15 F1500
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{% elif filament_main_type == 'ABS' or
+	filament_main_type == 'ASA' %}
+	M83
+	G1 E20 F210
+	G1 E10 F300
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F50
+	G1 E-30 F1500
+	{% elif filament_soft != 0 %}
+	M83
+	G1 E5 F60
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F210
+	G1 E3 F300
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% elif nozzle_diameter > 0.3999 and nozzle_diameter < 0.4001  %}
+	{% if filament_main_type == 'PLA' or filament_main_type == 'PLA-CF' or
+	filament_main_type == 'PETG' or filament_main_type == 'PETG-CF' or filament_main_type == 'PETG-GF' or
+	filament_main_type == 'PA' or filament_main_type == 'PA-CF' or filament_main_type == 'PA-GF' or
+	filament_main_type == 'PA6' or filament_main_type == 'PA6-CF' or filament_main_type == 'PA6-GF' or
+	filament_main_type == 'PC' or filament_main_type == 'PC-CF' or filament_main_type == 'PC-GF' or
+	filament_main_type == 'PAHT-CF' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F1000
+	G1 E15 F1500
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{% elif filament_main_type == 'ABS' or filament_main_type == 'ABS-GF' or
+	filament_main_type == 'ASA' or filament_main_type == 'ASA-CF' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F50
+	G1 E-30 F1500
+	{% elif filament_soft != 0 %}
+	M83
+	G1 E5 F600
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F400
+	G1 E3 F1500
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% elif nozzle_diameter > 0.5999 and nozzle_diameter < 0.6001  %}
+	{% if filament_main_type == 'PLA' or filament_main_type == 'PLA-CF' or
+	filament_main_type == 'PETG' or filament_main_type == 'PETG-CF' or filament_main_type == 'PETG-GF' or
+	filament_main_type == 'PA' or filament_main_type == 'PA-CF' or filament_main_type == 'PA-GF' or
+	filament_main_type == 'PA6' or filament_main_type == 'PA6-CF' or filament_main_type == 'PA6-GF' or
+	filament_main_type == 'PC' or filament_main_type == 'PC-CF' or filament_main_type == 'PC-GF' or
+	filament_main_type == 'PAHT-CF' %}
+	{% if filament_main_type == 'PLA' and filament_sub_type == 'Wood' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{% else %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F1000
+	G1 E15 F1500
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{%endif%}
+	{% elif filament_main_type == 'ABS' or filament_main_type == 'ABS-GF' or
+	filament_main_type == 'ASA' or filament_main_type == 'ASA-CF' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F50
+	G1 E-30 F1500
+	{% elif filament_soft != 0 %}
+	M83
+	G1 E5 F600
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F400
+	G1 E3 F1500
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% elif nozzle_diameter > 0.7999 and nozzle_diameter < 0.8001  %}
+	{% if filament_main_type == 'PLA' or filament_main_type == 'PLA-CF' or
+	filament_main_type == 'PETG' or filament_main_type == 'PETG-CF' or filament_main_type == 'PETG-GF' or
+	filament_main_type == 'PA' or filament_main_type == 'PA-CF' or filament_main_type == 'PA-GF' or
+	filament_main_type == 'PA6' or filament_main_type == 'PA6-CF' or filament_main_type == 'PA6-GF' or
+	filament_main_type == 'PC' or filament_main_type == 'PC-CF' or filament_main_type == 'PC-GF' or
+	filament_main_type == 'PAHT-CF' %}
+	{% if filament_main_type == 'PLA' and filament_sub_type == 'Wood' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{% else %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F1000
+	G1 E15 F1500
+	G1 E-35 F3300
+	G1 E-5 F25
+	G1 E-30 F1500
+	{%endif%}
+	{% elif filament_main_type == 'ABS' or filament_main_type == 'ABS-GF' or
+	filament_main_type == 'ASA' or filament_main_type == 'ASA-CF' %}
+	M83
+	G1 E20 F400
+	G1 E10 F1500
+	G1 E-35 F3000
+	G1 E-5 F50
+	G1 E25 F400
+	G1 E15 F900
+	G1 E-35 F3300
+	G1 E-5 F50
+	G1 E-30 F1500
+	{% elif filament_soft != 0 %}
+	M83
+	G1 E5 F600
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F400
+	G1 E3 F1500
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% else %}
+	{% if filament_soft != 0 %}
+	M83
+	G1 E5 F600
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% else %}
+	M83
+	G1 E57 F400
+	G1 E3 F1500
+	G1 E-27 F2700
+	G1 E-5.5 F40
+	
+	G1 E-37.5 F1500
+	{% endif %}
+	{% endif %}
+	{% endif %}
+	{% else %}
+	M83
+	G1 E-10 F300
+	{% endif %}
+
+[gcode_macro FEED_HANG_NEUTRAL]
+gcode = 
+	{% set extruder_default = printer[printer.toolhead.extruder].extruder_index %}
+	{% set extruder = params.EXTRUDER | default(extruder_default) | int %}
+	{% set value = params.VALUE | default(1.0) | float %}
+	{% set time = params.TIME | default(0.04) | float %}
+	{% set filament_feed_vars = printer['gcode_macro _FILAMENT_FEED_VARIABLE'] | default({}) %}
+	{% if filament_feed_vars != {} and
+	extruder >= 0 and extruder < printer.configfile.settings.printer.max_physical_extruder_num %}
+	{% set feed_module_seq = filament_feed_vars.module_sequence[extruder] %}
+	{% set feed_channel_seq = filament_feed_vars.channel_sequence[extruder] %}
+	{% if feed_channel_seq == 0 %}
+	{% set feed_channel_seq = 1 %}
+	{% else %}
+	{% set feed_channel_seq = 0 %}
+	{% endif %}
+	FEED_MOTOR_ONE_CYCLE MODULE={feed_module_seq} CHANNEL={feed_channel_seq} VALUE={value} TIME={time}
+	{% else %}
+	RESPOND TYPE=error MSG='{"gcode_macro FEED_HANG_NEUTRAL error!"}'
+	{% endif %}
+
+[gcode_macro AUTO_FEEDING_BATCH]
+variable_extruder0_temp = 0
+variable_extruder1_temp = 0
+variable_extruder2_temp = 0
+variable_extruder3_temp = 0
+variable_doing = False
+gcode = 
+	{% set action = params.ACTION | default('') %}
+	{% set default_extruder = printer[printer.toolhead.extruder].extruder_index %}
+	{% set current_extruder = params.EXTRUDER | default(default_extruder) | int %}
+	
+	{% if action == 'START' %}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder0_temp VALUE={printer['extruder'].target}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder1_temp VALUE={printer['extruder1'].target}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder2_temp VALUE={printer['extruder2'].target}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder3_temp VALUE={printer['extruder3'].target}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=doing VALUE=True
+	{% elif action == 'DOING' %}
+	{% if doing == False %}
+	{action_raise_error('{"coded": "0002-0531-0000-0024", "msg": "auto feeding batch has not yet begun or has already ended", "action": "none"}')}
+	{% else %}
+	AUTO_FEEDING_PREHEAT EXTRUDER={current_extruder}
+	{% if params.NEXT_EXTRUDER is defined %}
+	{% set next_extruder = params.NEXT_EXTRUDER | default(default_extruder) | int %}
+	AUTO_FEEDING_PREHEAT EXTRUDER={next_extruder}
+	{% endif %}
+	{% set extruder_temps = [extruder0_temp, extruder1_temp, extruder2_temp, extruder3_temp] %}
+	{% set restore_temp = extruder_temps[current_extruder] %}
+	AUTO_FEEDING {rawparams} RESTORE_TEMP={restore_temp}
+	{% endif %}
+	{% else %}
+	{% if doing == True %}
+	{% if printer['print_stats'].state == 'paused' or printer['print_stats'].state == 'printing' %}
+	M104 S{extruder0_temp} T0 A0
+	M104 S{extruder1_temp} T1 A0
+	M104 S{extruder2_temp} T2 A0
+	M104 S{extruder3_temp} T3 A0
+	{% else %}
+	M104 S0 T0 A0
+	M104 S0 T1 A0
+	M104 S0 T2 A0
+	M104 S0 T3 A0
+	{% endif %}
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=doing VALUE=False
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder0_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder1_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder2_temp VALUE=0
+	SET_GCODE_VARIABLE MACRO=AUTO_FEEDING_BATCH VARIABLE=extruder3_temp VALUE=0
+	{% endif %}
+	{% endif %}
+
+[exclude_object]
+
+[extruder_config_bak]
+
+[print_task_config]
+
+[mcu]
+serial = /dev/ttyS6
+baud = 921600
+restart_method = command
+
+[mcu e0]
+serial = /dev/serial/by-path/platform-xhci-hcd.0.auto-usb-0:1.3:1.0
+
+[mcu e1]
+serial = /dev/serial/by-path/platform-xhci-hcd.0.auto-usb-0:1.4:1.0
+
+[mcu e2]
+serial = /dev/serial/by-path/platform-xhci-hcd.0.auto-usb-0:1.2:1.0
+
+[mcu e3]
+serial = /dev/serial/by-path/platform-xhci-hcd.0.auto-usb-0:1.1:1.0
+
+[flow_calibrator]
+
+[input_shaper]
+shaper_type_x = mzv
+shaper_freq_x = 54
+shaper_freq_x_min = 47.5
+shaper_freq_x_max = 62.5
+shaper_type_y = mzv
+shaper_freq_y = 47.5
+shaper_freq_y_min = 43
+shaper_freq_y_max = 54
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PRESTART]
+gcode = 
+	
+	SET_LED LED=cavity_led WHITE=1
+	EXTRUDER_OFFSET_ACTION_PREHEAT
+	EXTRUDER_OFFSET_ACTION_PREHOMING
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PREHOMING]
+variable_force_homing = True
+gcode = 
+
+[gcode_macro _DETECT_PLATE]
+variable_hole_x = 13
+variable_hole_y = 233
+variable_hole_z = 3
+variable_solid_x = 13
+variable_solid_y = 220
+variable_solid_z = 3
+variable_delta_z = 1.1
+variable_check_ok_lift_z = 5
+variable_check_fail_lift_z = 150
+variable_move_speed = 200
+gcode = 
+	PROBE SAMPLES=2 SAMPLES_TOLERANCE=0.1
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PREHEAT]
+gcode = 
+	{% set default_nozzle = 140 %}
+	{% set nozzle_temps = {
+	'T0': params.T0_TEMP|default(params.NOZZLE_TEMP|default(default_nozzle)),
+	'T1': params.T1_TEMP|default(params.NOZZLE_TEMP|default(default_nozzle)),
+	'T2': params.T2_TEMP|default(params.NOZZLE_TEMP|default(default_nozzle)),
+	'T3': params.T3_TEMP|default(params.NOZZLE_TEMP|default(default_nozzle))
+	} %}
+	{% set bed_temp = params.BED_TEMP|default(55) %}
+	M140 S{bed_temp}
+	
+	{% for tool in ['T0', 'T1', 'T2', 'T3'] %}
+	M104 {tool} S{nozzle_temps[tool]} A0
+	
+	{% if tool in ['T1', 'T2'] %}
+	G4 P4000
+	{% endif %}
+	{% endfor %}
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout_on_pause}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_HEAT_T0]
+gcode = 
+	{% set heat_temp = params.HEAT_TEMP|default(200)|float %}
+	T0 A0
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M109 T0 A0 S{heat_temp}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_HEAT_T1]
+gcode = 
+	{% set heat_temp = params.HEAT_TEMP|default(200)|float %}
+	T1 A0
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M109 T1 A0 S{heat_temp}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_HEAT_T2]
+gcode = 
+	{% set heat_temp = params.HEAT_TEMP|default(200)|float %}
+	T2 A0
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M109 T2 A0 S{heat_temp}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_HEAT_T3]
+gcode = 
+	{% set heat_temp = params.HEAT_TEMP|default(200)|float %}
+	T3 A0
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M109 T3 A0 S{heat_temp}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_AUTO_CLEAN_T0]
+gcode = 
+	{% set filament_soft = params.SOFT | default(0) | int %}
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	
+	T0 A0
+	SAVE_GCODE_STATE NAME=auto_clean_t0
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	G90
+	M204 S10000
+	M83
+	{% if nozzle_diameter < 0.3 %}
+	{% if filament_soft == 0 %}
+	G1 E30 F210
+	G1 E-20 F360
+	{% else %}
+	G1 E5 F60
+	G1 E-10 F360
+	{% endif %}
+	{% else %}
+	{% if filament_soft == 0 %}
+	G1 E30 F600
+	G1 E-20 F1200
+	{% else %}
+	G1 E5 F120
+	G1 E-10 F600
+	{% endif %}
+	{% endif %}
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=4
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	RESTORE_GCODE_STATE NAME=auto_clean_t0
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_AUTO_CLEAN_T1]
+gcode = 
+	{% set filament_soft = params.SOFT | default(0) | int %}
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	
+	T1 A0
+	SAVE_GCODE_STATE NAME=auto_clean_t1
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	G90
+	M204 S10000
+	M83
+	{% if nozzle_diameter < 0.3 %}
+	{% if filament_soft == 0 %}
+	G1 E30 F210
+	G1 E-20 F360
+	{% else %}
+	G1 E5 F60
+	G1 E-10 F360
+	{% endif %}
+	{% else %}
+	{% if filament_soft == 0 %}
+	G1 E30 F600
+	G1 E-20 F1200
+	{% else %}
+	G1 E5 F120
+	G1 E-10 F600
+	{% endif %}
+	{% endif %}
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=4
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	RESTORE_GCODE_STATE NAME=auto_clean_t1
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_AUTO_CLEAN_T2]
+gcode = 
+	{% set filament_soft = params.SOFT | default(0) | int %}
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	
+	T2 A0
+	SAVE_GCODE_STATE NAME=auto_clean_t2
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	M204 S10000
+	G90
+	M83
+	{% if nozzle_diameter < 0.3 %}
+	{% if filament_soft == 0 %}
+	G1 E30 F210
+	G1 E-20 F360
+	{% else %}
+	G1 E5 F60
+	G1 E-10 F360
+	{% endif %}
+	{% else %}
+	{% if filament_soft == 0 %}
+	G1 E30 F600
+	G1 E-20 F1200
+	{% else %}
+	G1 E5 F120
+	G1 E-10 F600
+	{% endif %}
+	{% endif %}
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=4
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	RESTORE_GCODE_STATE NAME=auto_clean_t2
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_AUTO_CLEAN_T3]
+gcode = 
+	{% set filament_soft = params.SOFT | default(0) | int %}
+	{% set nozzle_diameter = params.NOZZLE_DIAMETER | default(0.4) | float %}
+	
+	T3 A0
+	SAVE_GCODE_STATE NAME=auto_clean_t3
+	MOVE_TO_DISCARD_FILAMENT_POSITION
+	G90
+	M204 S10000
+	M83
+	{% if nozzle_diameter < 0.3 %}
+	{% if filament_soft == 0 %}
+	G1 E30 F210
+	G1 E-20 F360
+	{% else %}
+	G1 E5 F60
+	G1 E-10 F360
+	{% endif %}
+	{% else %}
+	{% if filament_soft == 0 %}
+	G1 E30 F600
+	G1 E-20 F1200
+	{% else %}
+	G1 E5 F120
+	G1 E-10 F600
+	{% endif %}
+	{% endif %}
+	INNER_CUTOFF_BASE_DISCARD
+	INNER_ROUGHLY_CLEAN_NOZZLE_BASE_DISCARD ACTION=4
+	INNER_DISCARD_FILAMENT_BASE_DISCARD
+	MOVE_TO_XY_IDLE_POSITION_EXTRUDER
+	RESTORE_GCODE_STATE NAME=auto_clean_t3
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_MANUAL_CLEAN_T0]
+gcode = 
+	
+	T0 A0
+	SAVE_GCODE_STATE NAME=manual_clean_t0
+	G90
+	G0 Z150 F12000
+	G0 X135 Y5 F12000
+	RESTORE_GCODE_STATE NAME=manual_clean_t0
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_MANUAL_CLEAN_T1]
+gcode = 
+	
+	T1 A0
+	SAVE_GCODE_STATE NAME=manual_clean_t1
+	G90
+	G0 Z150 F12000
+	G0 X135 Y5 F12000
+	RESTORE_GCODE_STATE NAME=manual_clean_t1
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_MANUAL_CLEAN_T2]
+gcode = 
+	
+	T2 A0
+	SAVE_GCODE_STATE NAME=manual_clean_t2
+	G90
+	G0 Z150 F12000
+	G0 X135 Y5 F12000
+	RESTORE_GCODE_STATE NAME=manual_clean_t2
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_MANUAL_CLEAN_T3]
+gcode = 
+	
+	T3 A0
+	SAVE_GCODE_STATE NAME=manual_clean_t3
+	G90
+	G0 Z150 F12000
+	G0 X135 Y5 F12000
+	RESTORE_GCODE_STATE NAME=manual_clean_t3
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_WAIT_COOL_T0]
+gcode = 
+	{% set temp = params.TEMP|default(130)|float %}
+	SAVE_GCODE_STATE NAME=wait_cool_t0
+	SET_FAN_SPEED FAN=cavity_fan SPEED=1
+	M106 S255
+	G90
+	G0 X5 Y140 F12000
+	M109 T0 A0 S{temp}
+	SET_FAN_SPEED FAN=cavity_fan SPEED=0
+	M106 S0
+	RESTORE_GCODE_STATE NAME=wait_cool_t0
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_WAIT_COOL_T1]
+gcode = 
+	{% set temp = params.TEMP|default(130)|float %}
+	SAVE_GCODE_STATE NAME=wait_cool_t1
+	SET_FAN_SPEED FAN=cavity_fan SPEED=1
+	M106 S255
+	G90
+	G0 X5 Y140 F12000
+	M109 T1 A0 S{temp}
+	SET_FAN_SPEED FAN=cavity_fan SPEED=0
+	M106 S0
+	RESTORE_GCODE_STATE NAME=wait_cool_t1
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_WAIT_COOL_T2]
+gcode = 
+	{% set temp = params.TEMP|default(130)|float %}
+	SAVE_GCODE_STATE NAME=wait_cool_t2
+	SET_FAN_SPEED FAN=cavity_fan SPEED=1
+	M106 S255
+	G90
+	G0 X5 Y140 F12000
+	M109 T2 A0 S{temp}
+	SET_FAN_SPEED FAN=cavity_fan SPEED=0
+	M106 S0
+	RESTORE_GCODE_STATE NAME=wait_cool_t2
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_WAIT_COOL_T3]
+gcode = 
+	{% set temp = params.TEMP|default(130)|float %}
+	SAVE_GCODE_STATE NAME=wait_cool_t3
+	SET_FAN_SPEED FAN=cavity_fan SPEED=1
+	M106 S255
+	G90
+	G0 X5 Y140 F12000
+	M109 T3 A0 S{temp}
+	SET_FAN_SPEED FAN=cavity_fan SPEED=0
+	M106 S0
+	RESTORE_GCODE_STATE NAME=wait_cool_t3
+
+[gcode_macro EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE_ALL]
+gcode = 
+	EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE TOOL_ID=T0
+	EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE TOOL_ID=T1
+	EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE TOOL_ID=T2
+	EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE TOOL_ID=T3
+	G90
+	G1 Z150 F1800
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE_T0]
+gcode = 
+	{% set move = params.MOVE|default(0)|int %}
+	T0 A0
+	XYZ_OFFSET_CALIBRATE
+	{% if "xyz" in printer.toolhead.homed_axes and move%}
+	G90
+	G1 Z150 F1800
+	{% endif %}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE_T1]
+gcode = 
+	{% set move = params.MOVE|default(0)|int %}
+	T1 A0
+	XYZ_OFFSET_CALIBRATE
+	{% if "xyz" in printer.toolhead.homed_axes and move%}
+	G90
+	G1 Z150 F1800
+	{% endif %}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE_T2]
+gcode = 
+	{% set move = params.MOVE|default(0)|int %}
+	T2 A0
+	XYZ_OFFSET_CALIBRATE
+	{% if "xyz" in printer.toolhead.homed_axes and move%}
+	G90
+	G1 Z150 F1800
+	{% endif %}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_PROBE_CALIBRATE_T3]
+gcode = 
+	{% set move = params.MOVE|default(1)|int %}
+	T3 A0
+	XYZ_OFFSET_CALIBRATE
+	{% if "xyz" in printer.toolhead.homed_axes and move%}
+	G90
+	G1 Z150 F1800
+	{% endif %}
+
+[gcode_macro _EXTRUDER_OFFSET_ACTION_EXIT]
+gcode = 
+	{% set move = params.MOVE|default(1)|int %}
+	TURN_OFF_HEATERS
+	SET_IDLE_TIMEOUT TIMEOUT={printer.configfile.settings.idle_timeout.timeout}
+	{% if "xyz" in printer.toolhead.homed_axes and move%}
+	G90
+	G1 Z150 F1800
+	{% endif %}
+
+[gcode_macro XYZ_OFFSET_CALIBRATE]
+gcode = 
+	PROBE_XYZ_OFFSET_CALIBRATE  Z_PROBE_Y_MOVE_OFFSET=-1 SAMPLE_RETRACT_DIST=1 SAMPLES_AXIS=1 SAMPLE_DIR=1 PROBE_FAST_SPEED=2 PROBE_SPEED=2 SAMPLE_DIST=20 SAMPLES_TOLERANCE=0.02 SAMPLES_TOLERANCE_RETRIES=10 SAMPLES=3 HORIZONTAL_MOVE_X=13 HORIZONTAL_MOVE_Y=234.5 HORIZONTAL_MOVE_Z=2 RETRACT_Z_HIGHT=0.7 SAMPLE_TRIG_FREQ=450 PROBE_XYZ_MODE=1 HORIZONTAL_DIST=5 PROBE_POINTS=10 WAIT_BEFORE_SETUP=0.1 WAIT_AFTER_SETUP=0.05 SAVE_INFO=1
+
+[gcode_macro XYZ_OFFSET_CALIBRATE_ALL]
+gcode = 
+	T0 A0
+	G90
+	G0 Z2 F1200
+	XYZ_OFFSET_CALIBRATE
+	T1 A0
+	XYZ_OFFSET_CALIBRATE
+	T2 A0
+	XYZ_OFFSET_CALIBRATE
+	T3 A0
+	XYZ_OFFSET_CALIBRATE
+	EXTRUDER_OFFSET_ACTION_SAVE_RESULT FORCE_SAVE=0
+
+[printer]
+kinematics = corexy
+max_velocity = 500
+max_accel = 20000
+max_z_velocity = 30
+max_z_accel = 500
+square_corner_velocity = 8
+max_logical_extruder_num = 32
+max_physical_extruder_num = 4
+
+[stepper_x]
+step_pin = PC11
+dir_pin = !PC12
+enable_pin = !PB2
+rotation_distance = 40
+microsteps = 64
+endstop_pin = tmc2240_stepper_x:virtual_endstop
+position_min = 0
+position_endstop = 0
+position_max = 271
+homing_speed = 40
+homing_tolerance = 0.01
+homing_samples = 3
+second_homing_before_delay = 0.1
+homing_retract_dist = 10
+second_homing_speed = 40
+homing_tolerance_retries = 10
+homing_backoff_dist = 5
+
+[stepper_y]
+step_pin = PD2
+dir_pin = PB3
+enable_pin = !PB2
+rotation_distance = 40
+microsteps = 64
+endstop_pin = tmc2240_stepper_y:virtual_endstop
+position_min = 0
+position_endstop = 0
+position_max = 335
+homing_speed = 40
+homing_tolerance = 0.01
+homing_samples = 3
+second_homing_before_delay = 0.1
+homing_retract_dist = 10
+second_homing_speed = 40
+homing_tolerance_retries = 10
+homing_backoff_dist = 5
+
+[stepper_z]
+step_pin = PE7
+dir_pin = PE8
+enable_pin = !PB2
+rotation_distance = 8
+gear_ratio = 3:1
+microsteps = 16
+endstop_pin = tmc2209_stepper_z:virtual_endstop
+position_min = -6
+position_endstop = 275
+position_max = 275
+homing_speed = 10
+second_homing_before_delay = 0.2
+homing_tolerance = 0.02
+homing_retract_dist = 3
+second_homing_speed = 10
+homing_tolerance_retries = 10
+
+[tmc2240 stepper_x]
+cs_pin = PB12
+spi_bus = spi2
+diag0_pin = ^!PC10
+driver_sgt = 1
+run_current = 1.2
+
+[tmc2240 stepper_y]
+cs_pin = PE12
+spi_bus = spi4
+diag0_pin = ^!PC14
+driver_sgt = 1
+run_current = 1.2
+
+[tmc2209 stepper_z]
+uart_pin = PB4
+diag_pin = ^PC15
+uart_address = 0
+driver_sgthrs = 110
+run_current = 0.85
+
+[heater_bed]
+heater_pin = PE9
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = PC2
+allow_pid_calibrate = False
+ignore_pid_json = True
+control = pid
+pid_kp = 16.154
+pid_ki = 0.075
+pid_kd = 105.0
+full_power_threshold = 30.0
+zero_power_threshold = 0.45
+pid2_pid_kp = 51.172
+pid2_pid_ki = 0.625
+pid2_pid_kd = 95.0
+pid2_full_power_threshold = 10.0
+pid2_zero_power_threshold = 0.5
+pid2_settle_delta = 1.5
+pwm_min_set_diff = 0.0015
+pwm_cycle_time = 1
+report_time_delta = 1
+settle_delta = 1.5
+smooth_time = 4.5
+min_temp = 0
+max_temp = 100
+min_temp_overshoot = 10
+max_temp_overshoot = 10
+
+[verify_heater heater_bed]
+heating_gain = 1.0
+check_gain_time = 120
+
+[temperature_sensor cavity]
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = PC0
+min_temp = -273.15
+max_temp = 999
+gcode_id = C
+
+[fan_generic cavity_fan]
+pin = !PC8
+max_power = 1.0
+tachometer_pin = PC7
+tachometer_poll_interval = 0.001
+shutdown_speed = 0
+
+[led cavity_led]
+white_pin = PA10
+cycle_time = 0.003333
+
+[purifier]
+exhaust_pin = !PA8
+exhaust_max_power = 1.0
+exhaust_cycle_time = 0.001
+exhaust_hardware_pwm = True
+inner_pin = !PA9
+inner_max_power = 1.0
+inner_cycle_time = 0.001
+inner_hardware_pwm = True
+inner_tach_pin = PA6
+inner_tach_ppr = 2
+inner_tach_poll_interval = 0.0005
+power_enable_pin = PE15
+power_det_pin = PA7
+power_det_threshold = 0.88
+external_temp_sensor = cavity
+
+[bed_mesh]
+speed = 200
+move_accel = 5000
+samples = 3
+lift_speed = 30
+wait_before_setup = 0
+wait_after_setup = 0
+sample_retract_dist = 0.3
+horizontal_move_z = 2
+mesh_min = 3, 3
+mesh_max = 267, 267
+probe_count = 13, 13
+split_delta_z = 0.01
+mesh_pps = 2, 2
+move_check_distance = 3
+algorithm = bicubic
+fast_horizontal_move_z = 0.5
+first_raise_tool_gcode = SHAKE_Z
+
+[heater_fan power_fan]
+pin = !PC9
+heater = extruder, extruder1, extruder2, extruder3
+shutdown_speed = 0
+temp_speed_table = 
+	9999, 260, 1, 3, 1
+	9999, 45, 1, 1, 0.6
+
+[adc_current_sensor I_AD]
+pin = PC1
+sense_resistor = 0.01
+scale = 33.333
+voltage_offset = 0.0498
+
+[gcode_macro _PL_SAVE_VARIABLE]
+variable_start_save_line = 5
+variable_z_compensation_value = 0
+variable_save_line_interval = 1000
+variable_z_hop_temp = 140
+variable_pre_extrude_len = 20
+variable_speed_pre_extrude = 10
+variable_retract = 1
+variable_unretract = 1.1
+variable_speed_retract = 30
+variable_speed_unretract = 10
+variable_speed_resume_z = 30
+variable_speed_move = 350
+variable_move_extrude_macro = "MOVE_TO_DISCARD_FILAMENT_POSITION"
+variable_after_extrude_macro = "ROUGHLY_CLEAN_NOZZLE"
+gcode = 
+
+[auto_screws_tilt_adjust]
+screw1 = 15,15
+screw1_name = front left screw
+screw2 = 255,15
+screw2_name = front right screw
+screw3 = 255,255
+screw3_name = rear right screw
+screw4 = 15,255
+screw4_name = rear left screw
+speed = 400
+probe_interval = 5
+screw_order = 2,3,4,1
+horizontal_move_z = 3
+max_adjust_times = 100
+screw_adjust_threshold = 0.05
+adjust_tolerance = 0.025
+
+[gcode_arcs]
+resolution = 0.5
+
+[gcode_macro AUTO_BED_MESH_CALIBRATE]
+gcode = 
+	{% set bed_temp = params.TEMP|default(55)|float %}
+	{% set pause_time = params.PAUSE_TIME|default(120000)|int %}
+	G90
+	M140 S{bed_temp}
+	G0 Z2
+	M190 S{bed_temp}
+	G4 P{pause_time}
+	BED_MESH_CALIBRATE
+
+[gcode_macro SHAKE_Z]
+gcode = 
+	SAVE_GCODE_STATE NAME=shake_z
+	G91
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	SET_MAX_Z_ACCEL A=780
+	SET_MAX_Z_VELOCITY V=50
+	M204 S5000
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	G0 F3000 Z-0.75
+	G0 F3000 Z0.75
+	SET_MAX_Z_ACCEL A=500
+	SET_MAX_Z_VELOCITY V=30
+	RESTORE_GCODE_STATE NAME=shake_z
+
+[delayed_gcode bed_mesh_init]
+initial_duration = .01
+gcode = 
+	BED_MESH_PROFILE LOAD=default
+
+[gcode_macro SENSORLESS_HOME_X]
+gcode = 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	G4 P2000
+	
+	G28 X
+
+[gcode_macro SENSORLESS_HOME_Y]
+gcode = 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	G4 P1500
+	
+	G28 Y
+
+[gcode_macro SENSORLESS_HOME_Z]
+gcode = 
+	{% set HOME_CUR = 0.700 %}
+	{% set driver_config = printer.configfile.settings['tmc2209 stepper_z'] %}
+	{% set RUN_CUR = driver_config.run_current %}
+	
+	SET_TMC_CURRENT STEPPER=stepper_z CURRENT={HOME_CUR}
+	
+	G4 P1000
+	
+	G28 Z
+	
+	G91
+	G1 Z-5 F600
+	G90
+	
+	SET_TMC_CURRENT STEPPER=stepper_z CURRENT={RUN_CUR}
+
+[gcode_macro _HOMING_PRECISE_COREXY_ADVANCED]
+gcode = 
+	{% set force_calibration = params.FORCE_CALIBRATION|default(0)|int %}
+	SENSORLESS_HOME_Y
+	SENSORLESS_HOME_X
+	HOMING_PRECISE_COREXY FORCE_CALIBRATION={force_calibration}
+
+[gcode_macro _CLIENT_VARIABLE]
+variable_use_custom_pos = False
+variable_custom_park_x = 30.0
+variable_custom_park_y = 30.0
+variable_custom_park_dz = 5.0
+variable_retract = 2.0
+variable_cancel_retract = 2.0
+variable_speed_retract = 35.0
+variable_unretract = 1.8
+variable_speed_unretract = 7.0
+variable_speed_hop = 15.0
+variable_speed_move = 500.0
+variable_park_at_cancel = False
+variable_park_at_cancel_x = 30.0
+variable_park_at_cancel_y = 30.0
+variable_move_z_max_heigh = 270.5
+gcode = 
+
+[extruder]
+step_pin = e0:PA8
+dir_pin = e0:PA9
+enable_pin = !e0:PB2
+microsteps = 16
+rotation_distance = 4.95
+nozzle_diameter = 0.400
+filament_diameter = 1.750
+max_extrude_only_accel = 5000
+max_extrude_only_velocity = 100
+max_extrude_cross_section = 500
+heater_pin = e0:PB5
+idle_hold_max_power = 0.5
+active_hold_max_power = 1
+pwm_cycle_time = 0.05
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = e0:PA2
+inductance_coil = extruder
+control = pid
+pid_kp = 33.540
+pid_ki = 9.317
+pid_kd = 30.186
+min_temp = 0
+max_temp = 300
+min_temp_overshoot = 10
+max_temp_overshoot = 10
+min_extrude_temp = 170
+max_extrude_only_distance = 200
+smooth_time = 2
+xy_park_position = 35.0,332.2
+y_idle_position = 250
+extruder_grab_dir = True
+horizontal_move_x = 10
+retract_x_dist = 1.5
+fast_move_speed = 400
+slow_move_speed = 60
+grab_speed = 10
+switch_accel = 5000
+insertion_buffer_dist = 5
+park_detector = extruder
+fan = fan
+switch_extruder_ctr_fan_pwm = False
+
+[tmc2209 extruder]
+uart_pin = e0:PA15
+run_current = 0.8
+hold_current = 0.2
+uart_address = 3
+sense_resistor = 0.150
+driver_iholddelay = 15
+driver_tpowerdown = 137
+
+[park_detector extruder]
+pin = PB0
+analog_range = 0 , 470
+active_pin = e0:PB1
+active_analog_range = 0 , 47000
+grab_valid_pin = e0:PA3
+grab_valid_analog_range = 0, 390
+
+[fan]
+pin = e0:PB3
+tachometer_pin = e0:PB4
+tachometer_poll_interval = 0.001
+cycle_time = 0.005
+shutdown_speed = 0
+aux_cool_fan = cavity_fan
+aux_cool_fan_id = 2
+
+[heater_fan e0_nozzle_fan]
+pin = !e0:PB0
+tachometer_pin = e0:PA10
+heater = extruder
+heater_temp = 45
+fan_speed = 1
+probe_speed = 0.5
+stepped_temp_table = 
+	45, 0.3
+	60, 0.35
+	70, 0.4
+	100, 0.45
+	140, 0.5
+	160, 0.6
+	180, 0.65
+	200, 0.7
+	220, 0.75
+	230, 0.8
+	240, 0.85
+	260, 0.9
+external_temp_sensor = cavity
+external_temp_guard_range = -15.0, 45.0
+external_temp_guard_fan_speed = 1.0
+tachometer_poll_interval = 0.0005
+max_power = 1
+shutdown_speed = 0
+
+[output_pin e0_heat_sw]
+pin = !e0:PB7
+value = 1
+shutdown_value = 0
+
+[filament_motion_sensor e0_filament]
+switch_pin = e0:PA1
+analog_range = 0 , 1504
+detection_length = 0.5
+extruder = extruder
+pause_on_runout = True
+
+[filament_entangle_detect e0_filament]
+extruder = extruder
+filament_feed = left
+skip_length = 20
+
+[inductance_coil extruder]
+pin = e0:PA0
+z_offset = -0.05
+freq_cal_mode = 1
+samples = 4
+samples_tolerance = 0.020
+samples_tolerance_retries = 10
+capture_over_cnt = 200
+cal_window_size = 5
+cal_time_out = 2
+speed = 2.0
+sample_retract_dist = 1
+relative_trigger_freq = 300
+max_freq = 1650000
+min_freq = 1200000
+horizontal_move_z = 100
+
+[extruder1]
+step_pin = e1:PA8
+dir_pin = e1:PA9
+enable_pin = !e1:PB2
+microsteps = 16
+rotation_distance = 4.95
+nozzle_diameter = 0.400
+filament_diameter = 1.750
+max_extrude_only_accel = 5000
+max_extrude_only_velocity = 100
+max_extrude_cross_section = 500
+heater_pin = e1:PB5
+idle_hold_max_power = 0.5
+active_hold_max_power = 1
+pwm_cycle_time = 0.05
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = e1:PA2
+inductance_coil = extruder1
+control = pid
+pid_kp = 33.540
+pid_ki = 9.317
+pid_kd = 30.186
+min_temp = 0
+max_temp = 300
+min_temp_overshoot = 10
+max_temp_overshoot = 10
+min_extrude_temp = 170
+max_extrude_only_distance = 200
+smooth_time = 2
+xy_park_position = 102.7,332.2
+y_idle_position = 250
+extruder_grab_dir = False
+horizontal_move_x = 10
+retract_x_dist = 1.5
+fast_move_speed = 400
+slow_move_speed = 60
+grab_speed = 10
+switch_accel = 5000
+insertion_buffer_dist = 5
+park_detector = extruder1
+fan = fan_generic e1_fan
+switch_extruder_ctr_fan_pwm = False
+
+[tmc2209 extruder1]
+uart_pin = e1:PA15
+run_current = 0.8
+hold_current = 0.2
+uart_address = 3
+sense_resistor = 0.150
+driver_iholddelay = 15
+driver_tpowerdown = 137
+
+[park_detector extruder1]
+pin = PC4
+analog_range = 0 , 470
+active_pin = e1:PB1
+active_analog_range = 0 , 47000
+grab_valid_pin = e1:PA3
+grab_valid_analog_range = 0, 390
+
+[fan_generic e1_fan]
+pin = e1:PB3
+tachometer_pin = e1:PB4
+tachometer_poll_interval = 0.001
+cycle_time = 0.005
+shutdown_speed = 0
+
+[heater_fan e1_nozzle_fan]
+pin = !e1:PB0
+tachometer_pin = e1:PA10
+heater = extruder1
+heater_temp = 45
+fan_speed = 1
+probe_speed = 0.5
+stepped_temp_table = 
+	45, 0.3
+	60, 0.35
+	70, 0.4
+	100, 0.45
+	140, 0.5
+	160, 0.6
+	180, 0.65
+	200, 0.7
+	220, 0.75
+	230, 0.8
+	240, 0.85
+	260, 0.9
+external_temp_sensor = cavity
+external_temp_guard_range = -15.0, 45.0
+external_temp_guard_fan_speed = 1.0
+tachometer_poll_interval = 0.0005
+max_power = 1
+shutdown_speed = 0
+
+[output_pin e1_heat_sw]
+pin = !e1:PB7
+value = 1
+shutdown_value = 0
+
+[filament_motion_sensor e1_filament]
+switch_pin = e1:PA1
+analog_range = 0 , 1504
+detection_length = 0.5
+extruder = extruder1
+pause_on_runout = True
+
+[filament_entangle_detect e1_filament]
+extruder = extruder1
+filament_feed = left
+skip_length = 20
+
+[inductance_coil extruder1]
+z_offset = 0
+pin = e1:PA0
+freq_cal_mode = 1
+capture_over_cnt = 200
+cal_window_size = 5
+cal_time_out = 2
+max_freq = 1650000
+min_freq = 1200000
+
+[extruder2]
+step_pin = e2:PA8
+dir_pin = e2:PA9
+enable_pin = !e2:PB2
+microsteps = 16
+rotation_distance = 4.95
+nozzle_diameter = 0.400
+filament_diameter = 1.750
+max_extrude_only_accel = 5000
+max_extrude_only_velocity = 100
+max_extrude_cross_section = 500
+heater_pin = e2:PB5
+idle_hold_max_power = 0.5
+active_hold_max_power = 1
+pwm_cycle_time = 0.05
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = e2:PA2
+inductance_coil = extruder2
+control = pid
+pid_kp = 33.540
+pid_ki = 9.317
+pid_kd = 30.186
+min_temp = 0
+max_temp = 300
+min_temp_overshoot = 10
+max_temp_overshoot = 10
+min_extrude_temp = 170
+max_extrude_only_distance = 200
+smooth_time = 2
+xy_park_position = 170.2,332.2
+y_idle_position = 250
+extruder_grab_dir = False
+horizontal_move_x = 10
+retract_x_dist = 1.5
+fast_move_speed = 400
+slow_move_speed = 60
+grab_speed = 10
+switch_accel = 5000
+insertion_buffer_dist = 5
+park_detector = extruder2
+fan = fan_generic e2_fan
+switch_extruder_ctr_fan_pwm = False
+
+[tmc2209 extruder2]
+uart_pin = e2:PA15
+run_current = 0.8
+hold_current = 0.2
+uart_address = 3
+sense_resistor = 0.150
+driver_iholddelay = 15
+driver_tpowerdown = 137
+
+[park_detector extruder2]
+pin = PC5
+analog_range = 0 , 470
+active_pin = e2:PB1
+active_analog_range = 0 , 47000
+grab_valid_pin = e2:PA3
+grab_valid_analog_range = 0, 390
+
+[fan_generic e2_fan]
+pin = e2:PB3
+tachometer_pin = e2:PB4
+tachometer_poll_interval = 0.001
+cycle_time = 0.005
+shutdown_speed = 0
+
+[heater_fan e2_nozzle_fan]
+pin = !e2:PB0
+tachometer_pin = e2:PA10
+heater = extruder2
+heater_temp = 45
+fan_speed = 1
+probe_speed = 0.5
+stepped_temp_table = 
+	45, 0.3
+	60, 0.35
+	70, 0.4
+	100, 0.45
+	140, 0.5
+	160, 0.6
+	180, 0.65
+	200, 0.7
+	220, 0.75
+	230, 0.8
+	240, 0.85
+	260, 0.9
+external_temp_sensor = cavity
+external_temp_guard_range = -15.0, 45.0
+external_temp_guard_fan_speed = 1.0
+tachometer_poll_interval = 0.0005
+max_power = 1
+shutdown_speed = 0
+
+[output_pin e2_heat_sw]
+pin = !e2:PB7
+value = 1
+shutdown_value = 0
+
+[filament_motion_sensor e2_filament]
+switch_pin = e2:PA1
+analog_range = 0 , 1504
+detection_length = 0.5
+extruder = extruder2
+pause_on_runout = True
+
+[filament_entangle_detect e2_filament]
+extruder = extruder2
+filament_feed = right
+skip_length = 20
+
+[inductance_coil extruder2]
+z_offset = 0
+pin = e2:PA0
+freq_cal_mode = 1
+capture_over_cnt = 200
+cal_window_size = 5
+cal_time_out = 2
+max_freq = 1650000
+min_freq = 1200000
+
+[extruder3]
+step_pin = e3:PA8
+dir_pin = e3:PA9
+enable_pin = !e3:PB2
+microsteps = 16
+rotation_distance = 4.95
+nozzle_diameter = 0.400
+filament_diameter = 1.750
+max_extrude_only_accel = 5000
+max_extrude_only_velocity = 100
+max_extrude_cross_section = 500
+heater_pin = e3:PB5
+idle_hold_max_power = 0.5
+active_hold_max_power = 1
+pwm_cycle_time = 0.05
+sensor_type = NTC_100K_3950_PRECISE
+sensor_pin = e3:PA2
+inductance_coil = extruder3
+control = pid
+pid_kp = 33.540
+pid_ki = 9.317
+pid_kd = 30.186
+min_temp = 0
+max_temp = 300
+min_temp_overshoot = 10
+max_temp_overshoot = 10
+min_extrude_temp = 170
+max_extrude_only_distance = 200
+smooth_time = 2
+xy_park_position = 237.7,332.2
+y_idle_position = 250
+extruder_grab_dir = False
+horizontal_move_x = 10
+retract_x_dist = 1.5
+fast_move_speed = 400
+slow_move_speed = 60
+grab_speed = 10
+switch_accel = 5000
+insertion_buffer_dist = 5
+park_detector = extruder3
+fan = fan_generic e3_fan
+switch_extruder_ctr_fan_pwm = False
+
+[tmc2209 extruder3]
+uart_pin = e3:PA15
+run_current = 0.8
+hold_current = 0.2
+uart_address = 3
+sense_resistor = 0.150
+driver_iholddelay = 15
+driver_tpowerdown = 137
+
+[park_detector extruder3]
+pin = PB1
+analog_range = 0 , 470
+active_pin = e3:PB1
+active_analog_range = 0 , 47000
+grab_valid_pin = e3:PA3
+grab_valid_analog_range = 0, 390
+
+[fan_generic e3_fan]
+pin = e3:PB3
+tachometer_pin = e3:PB4
+tachometer_poll_interval = 0.001
+cycle_time = 0.005
+shutdown_speed = 0
+
+[heater_fan e3_nozzle_fan]
+pin = !e3:PB0
+tachometer_pin = e3:PA10
+heater = extruder3
+heater_temp = 45
+fan_speed = 1
+probe_speed = 0.5
+stepped_temp_table = 
+	45, 0.3
+	60, 0.35
+	70, 0.4
+	100, 0.45
+	140, 0.5
+	160, 0.6
+	180, 0.65
+	200, 0.7
+	220, 0.75
+	230, 0.8
+	240, 0.85
+	260, 0.9
+external_temp_sensor = cavity
+external_temp_guard_range = -15.0, 45.0
+external_temp_guard_fan_speed = 1.0
+tachometer_poll_interval = 0.0005
+max_power = 1
+shutdown_speed = 0
+
+[output_pin e3_heat_sw]
+pin = !e3:PB7
+value = 1
+shutdown_value = 0
+
+[filament_motion_sensor e3_filament]
+switch_pin = e3:PA1
+analog_range = 0 , 1504
+detection_length = 0.5
+extruder = extruder3
+pause_on_runout = True
+
+[filament_entangle_detect e3_filament]
+extruder = extruder3
+filament_feed = right
+skip_length = 20
+
+[inductance_coil extruder3]
+z_offset = 0
+pin = e3:PA0
+freq_cal_mode = 1
+capture_over_cnt = 200
+cal_window_size = 5
+cal_time_out = 2
+max_freq = 1650000
+min_freq = 1200000
+
+[filament_feed left]
+filament_ch_1 = 1
+filament_ch_2 = 0
+light_ch_1_white = PE4
+light_ch_1_red = PE0
+light_ch_2_white = PD10
+light_ch_2_red = PE1
+port_ch_1_pin = PA3
+port_ch_2_pin = PA2
+port_ch_1_threshold = 0.18
+port_ch_2_threshold = 0.18
+wheel_tach_ch_1_1_pin = PE5
+wheel_tach_ch_1_2_pin = PE6
+wheel_tach_ch_2_1_pin = PD1
+wheel_tach_ch_2_2_pin = PD0
+wheel_tach_ppr = 6
+wheel_tach_poll_interval = 0.0005
+motor_ch_1_pin = PD7
+motor_ch_2_pin = PD6
+motor_cycle_time = 0.01
+motor_max_value = 1.0
+motor_tach_pin = PD15
+motor_tach_ppr = 1
+motor_tach_poll_interval = 0.0005
+load_position_x = 150
+load_position_y = 5
+load_extrude_max_times = 20
+preload_length = 950
+coil_freq_thershold_soft = 800
+coil_freq_thershold_hard = 1500
+
+[filament_feed right]
+filament_ch_1 = 2
+filament_ch_2 = 3
+light_ch_1_white = PE3
+light_ch_1_red = PE2
+light_ch_2_white = PD11
+light_ch_2_red = PE10
+port_ch_1_pin = PA1
+port_ch_2_pin = PA0
+port_ch_1_threshold = 0.18
+port_ch_2_threshold = 0.18
+wheel_tach_ch_1_1_pin = PD12
+wheel_tach_ch_1_2_pin = PD13
+wheel_tach_ch_2_1_pin = PD9
+wheel_tach_ch_2_2_pin = PD8
+wheel_tach_ppr = 6
+wheel_tach_poll_interval = 0.0005
+motor_ch_1_pin = PD5
+motor_ch_2_pin = PD4
+motor_cycle_time = 0.01
+motor_max_value = 1.0
+motor_tach_pin = PD14
+motor_tach_ppr = 1
+motor_tach_poll_interval = 0.0005
+load_position_x = 150
+load_position_y = 5
+load_extrude_max_times = 20
+preload_length = 950
+coil_freq_thershold_soft = 800
+coil_freq_thershold_hard = 1500
+
+[gcode_macro _FILAMENT_FEED_VARIABLE]
+variable_module_sequence = 'left','left','right','right'
+variable_channel_sequence = 1,0,0,1
+gcode = 
+
+[idle_timeout]
+timeout = 300
+timeout_on_pause = 9999999999
+
+[filament_parameters]
+
+[defect_detection]
+
+[fixpack_ui]
+
+[fixpack_runout]
+=======================
+11-25 18:39:33.053:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_stats.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_stats.json'
+11-25 18:39:33.059:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_stats.json
+11-25 18:39:33.355:Extruder config saved successfully to /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder_config.json. 
+Data: {'extruder': {'xy_park_position': [35.0, 332.2], 'y_idle_position': 250.0}, 'extruder1': {'xy_park_position': [102.7, 332.2], 'y_idle_position': 250.0}, 'extruder2': {'xy_park_position': [170.2, 332.2], 'y_idle_position': 250.0}, 'extruder3': {'xy_park_position': [237.7, 332.2], 'y_idle_position': 250.0}}
+11-25 18:39:33.366:Extruder config saved successfully to /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/extruder_base_position.json. 
+Data: {'extruder': {'base_position': None}, 'extruder1': {'base_position': None}, 'extruder2': {'base_position': None}, 'extruder3': {'base_position': None}}
+11-25 18:39:33.407:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task.json'
+11-25 18:39:33.415:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task.json
+11-25 18:39:33.417:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task_2.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task_2.json'
+11-25 18:39:33.426:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/print_task_2.json
+11-25 18:39:33.426:[print_task_config] reset print info
+11-25 18:39:33.584:reset flowcalibration config: [Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/flow_calibrator.json'
+11-25 18:39:33.596:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/input_shaper.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/input_shaper.json'
+11-25 18:39:33.601:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/input_shaper.json
+11-25 18:39:33.903:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/purifier.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/purifier.json'
+11-25 18:39:33.911:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/purifier.json
+11-25 18:39:33.987:Using default corner offsets of 0.0 for bed
+11-25 18:39:34.034:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_runout_sensor.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_runout_sensor.json'
+11-25 18:39:34.043:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_runout_sensor.json
+11-25 18:39:34.053:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_entangle.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_entangle.json'
+11-25 18:39:34.061:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e0_filament_entangle.json
+11-25 18:39:34.066:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_runout_sensor.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_runout_sensor.json'
+11-25 18:39:34.075:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_runout_sensor.json
+11-25 18:39:34.076:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_entangle.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_entangle.json'
+11-25 18:39:34.088:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e1_filament_entangle.json
+11-25 18:39:34.092:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_runout_sensor.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_runout_sensor.json'
+11-25 18:39:34.103:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_runout_sensor.json
+11-25 18:39:34.105:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_entangle.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_entangle.json'
+11-25 18:39:34.114:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e2_filament_entangle.json
+11-25 18:39:34.120:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_runout_sensor.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_runout_sensor.json'
+11-25 18:39:34.129:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_runout_sensor.json
+11-25 18:39:34.130:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_entangle.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_entangle.json'
+11-25 18:39:34.140:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/e3_filament_entangle.json
+11-25 18:39:34.145:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/left_filament_feed.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/left_filament_feed.json'
+11-25 18:39:34.153:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/left_filament_feed.json
+11-25 18:39:34.155:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/right_filament_feed.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/right_filament_feed.json'
+11-25 18:39:34.165:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/right_filament_feed.json
+11-25 18:39:34.182:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_02.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_02.json'
+11-25 18:39:34.191:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_02.json
+11-25 18:39:34.193:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_04.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_04.json'
+11-25 18:39:34.201:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_04.json
+11-25 18:39:34.203:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_06.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_06.json'
+11-25 18:39:34.212:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_06.json
+11-25 18:39:34.214:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_08.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_08.json'
+11-25 18:39:34.223:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_standard_08.json
+11-25 18:39:34.225:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_high_flow_04.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_high_flow_04.json'
+11-25 18:39:34.234:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/filament_para_high_flow_04.json
+11-25 18:39:34.266:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/defect_detection.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/defect_detection.json'
+11-25 18:39:34.275:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/snapmaker/defect_detection.json
+11-25 18:39:34.343:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder_nozzle_config.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder_nozzle_config.json'
+11-25 18:39:34.353:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder_nozzle_config.json
+11-25 18:39:34.354:Extruder max_extrude_ratio=207.875844
+11-25 18:39:34.356:active new eddy current probe: inductance_coil extruder
+11-25 18:39:34.357:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder1_nozzle_config.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder1_nozzle_config.json'
+11-25 18:39:34.367:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder1_nozzle_config.json
+11-25 18:39:34.368:Extruder max_extrude_ratio=207.875844
+11-25 18:39:34.370:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder2_nozzle_config.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder2_nozzle_config.json'
+11-25 18:39:34.380:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder2_nozzle_config.json
+11-25 18:39:34.381:Extruder max_extrude_ratio=207.875844
+11-25 18:39:34.399:[asyncio] bg read failed: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder3_nozzle_config.json err=[Errno 2] No such file or directory: '/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder3_nozzle_config.json'
+11-25 18:39:34.409:config file not exits: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/cfg/persistent/extruder3_nozzle_config.json
+11-25 18:39:34.410:Extruder max_extrude_ratio=207.875844
+11-25 18:39:34.418:Loaded MCU 'mcu' 140 commands (7ac453b5 / gcc: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614 binutils: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614)
+MCU 'mcu' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 BUS_PINS_spi3a=PC11,PC12,PC10 BUS_PINS_spi4=PE13,PE14,PE11 CANBUS_BRIDGE=1 CLOCK_FREQ=240000000 INITIAL_PINS=!PE9,PB2,PC8,PC9,!PA10,!PA15,!PD4,!PD5,!PD6,!PD7,!PE15 MCU=stm32f103xe PWM_MAX=255 RECEIVE_WINDOW=192 RESERVE_PINS_CAN=PB5,PB6 RESERVE_PINS_USB=PA11,PA12 RESERVE_PINS_serial=PB9,PB8 SERIAL_BAUD=921600 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
+11-25 18:39:34.422:Loaded MCU 'e0' 138 commands (7ac453b5 / gcc: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614 binutils: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614)
+MCU 'e0' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=144000000 INITIAL_PINS=PB2,!PB5,PB0,!PB3 MCU=stm32f105xc PWM_MAX=255 RESERVE_PINS_USB=PA11,PA12 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
+11-25 18:39:34.425:Loaded MCU 'e1' 138 commands (7ac453b5 / gcc: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614 binutils: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614)
+MCU 'e1' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=144000000 INITIAL_PINS=PB2,!PB5,PB0,!PB3 MCU=stm32f105xc PWM_MAX=255 RESERVE_PINS_USB=PA11,PA12 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
+11-25 18:39:34.428:Loaded MCU 'e2' 138 commands (7ac453b5 / gcc: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614 binutils: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614)
+MCU 'e2' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=144000000 INITIAL_PINS=PB2,!PB5,PB0,!PB3 MCU=stm32f105xc PWM_MAX=255 RESERVE_PINS_USB=PA11,PA12 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
+11-25 18:39:34.430:Loaded MCU 'e3' 138 commands (7ac453b5 / gcc: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 13.3.1 20240614 binutils: (Arm GNU Toolchain 13.3.Rel1 (Build arm-13.24)) 2.42.0.20240614)
+MCU 'e3' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=144000000 INITIAL_PINS=PB2,!PB5,PB0,!PB3 MCU=stm32f105xc PWM_MAX=255 RESERVE_PINS_USB=PA11,PA12 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
+11-25 18:39:34.432:Sending MCU 'mcu' printer configuration...
+11-25 18:39:34.434:Configured MCU 'mcu' (500 moves)
+11-25 18:39:34.434:Sending MCU 'e0' printer configuration...
+11-25 18:39:34.435:Configured MCU 'e0' (500 moves)
+11-25 18:39:34.435:Sending MCU 'e1' printer configuration...
+11-25 18:39:34.436:Configured MCU 'e1' (500 moves)
+11-25 18:39:34.436:Sending MCU 'e2' printer configuration...
+11-25 18:39:34.436:Configured MCU 'e2' (500 moves)
+11-25 18:39:34.437:Sending MCU 'e3' printer configuration...
+11-25 18:39:34.437:Configured MCU 'e3' (500 moves)
+11-25 18:39:34.438:Enabling TMC virtual enable for 'stepper_x'
+11-25 18:39:34.438:Enabling TMC virtual enable for 'stepper_y'
+11-25 18:39:34.439:Enabling TMC virtual enable for 'stepper_z'
+11-25 18:39:34.439:bed_mesh: generated points
+Index |  Tool Adjusted  |   Probe
+11-25 18:39:34.439:  0   | (3.0, 3.0)      | (3.0, 3.0)
+11-25 18:39:34.439:  1   | (25.0, 3.0)     | (25.0, 3.0)
+11-25 18:39:34.439:  2   | (47.0, 3.0)     | (47.0, 3.0)
+11-25 18:39:34.439:  3   | (69.0, 3.0)     | (69.0, 3.0)
+11-25 18:39:34.439:  4   | (91.0, 3.0)     | (91.0, 3.0)
+11-25 18:39:34.439:  5   | (113.0, 3.0)    | (113.0, 3.0)
+11-25 18:39:34.439:  6   | (135.0, 3.0)    | (135.0, 3.0)
+11-25 18:39:34.439:  7   | (157.0, 3.0)    | (157.0, 3.0)
+11-25 18:39:34.439:  8   | (179.0, 3.0)    | (179.0, 3.0)
+11-25 18:39:34.439:  9   | (201.0, 3.0)    | (201.0, 3.0)
+11-25 18:39:34.439:  10  | (223.0, 3.0)    | (223.0, 3.0)
+11-25 18:39:34.439:  11  | (245.0, 3.0)    | (245.0, 3.0)
+11-25 18:39:34.439:  12  | (267.0, 3.0)    | (267.0, 3.0)
+11-25 18:39:34.439:  13  | (267.0, 25.0)   | (267.0, 25.0)
+11-25 18:39:34.439:  14  | (245.0, 25.0)   | (245.0, 25.0)
+11-25 18:39:34.439:  15  | (223.0, 25.0)   | (223.0, 25.0)
+11-25 18:39:34.439:  16  | (201.0, 25.0)   | (201.0, 25.0)
+11-25 18:39:34.439:  17  | (179.0, 25.0)   | (179.0, 25.0)
+11-25 18:39:34.439:  18  | (157.0, 25.0)   | (157.0, 25.0)
+11-25 18:39:34.439:  19  | (135.0, 25.0)   | (135.0, 25.0)
+11-25 18:39:34.439:  20  | (113.0, 25.0)   | (113.0, 25.0)
+11-25 18:39:34.439:  21  | (91.0, 25.0)    | (91.0, 25.0)
+11-25 18:39:34.439:  22  | (69.0, 25.0)    | (69.0, 25.0)
+11-25 18:39:34.439:  23  | (47.0, 25.0)    | (47.0, 25.0)
+11-25 18:39:34.439:  24  | (25.0, 25.0)    | (25.0, 25.0)
+11-25 18:39:34.439:  25  | (3.0, 25.0)     | (3.0, 25.0)
+11-25 18:39:34.439:  26  | (3.0, 47.0)     | (3.0, 47.0)
+11-25 18:39:34.439:  27  | (25.0, 47.0)    | (25.0, 47.0)
+11-25 18:39:34.439:  28  | (47.0, 47.0)    | (47.0, 47.0)
+11-25 18:39:34.439:  29  | (69.0, 47.0)    | (69.0, 47.0)
+11-25 18:39:34.439:  30  | (91.0, 47.0)    | (91.0, 47.0)
+11-25 18:39:34.439:  31  | (113.0, 47.0)   | (113.0, 47.0)
+11-25 18:39:34.439:  32  | (135.0, 47.0)   | (135.0, 47.0)
+11-25 18:39:34.439:  33  | (157.0, 47.0)   | (157.0, 47.0)
+11-25 18:39:34.439:  34  | (179.0, 47.0)   | (179.0, 47.0)
+11-25 18:39:34.439:  35  | (201.0, 47.0)   | (201.0, 47.0)
+11-25 18:39:34.439:  36  | (223.0, 47.0)   | (223.0, 47.0)
+11-25 18:39:34.439:  37  | (245.0, 47.0)   | (245.0, 47.0)
+11-25 18:39:34.439:  38  | (267.0, 47.0)   | (267.0, 47.0)
+11-25 18:39:34.439:  39  | (267.0, 69.0)   | (267.0, 69.0)
+11-25 18:39:34.439:  40  | (245.0, 69.0)   | (245.0, 69.0)
+11-25 18:39:34.439:  41  | (223.0, 69.0)   | (223.0, 69.0)
+11-25 18:39:34.439:  42  | (201.0, 69.0)   | (201.0, 69.0)
+11-25 18:39:34.439:  43  | (179.0, 69.0)   | (179.0, 69.0)
+11-25 18:39:34.439:  44  | (157.0, 69.0)   | (157.0, 69.0)
+11-25 18:39:34.439:  45  | (135.0, 69.0)   | (135.0, 69.0)
+11-25 18:39:34.439:  46  | (113.0, 69.0)   | (113.0, 69.0)
+11-25 18:39:34.439:  47  | (91.0, 69.0)    | (91.0, 69.0)
+11-25 18:39:34.439:  48  | (69.0, 69.0)    | (69.0, 69.0)
+11-25 18:39:34.439:  49  | (47.0, 69.0)    | (47.0, 69.0)
+11-25 18:39:34.439:  50  | (25.0, 69.0)    | (25.0, 69.0)
+11-25 18:39:34.439:  51  | (3.0, 69.0)     | (3.0, 69.0)
+11-25 18:39:34.440:  52  | (3.0, 91.0)     | (3.0, 91.0)
+11-25 18:39:34.440:  53  | (25.0, 91.0)    | (25.0, 91.0)
+11-25 18:39:34.440:  54  | (47.0, 91.0)    | (47.0, 91.0)
+11-25 18:39:34.440:  55  | (69.0, 91.0)    | (69.0, 91.0)
+11-25 18:39:34.440:  56  | (91.0, 91.0)    | (91.0, 91.0)
+11-25 18:39:34.440:  57  | (113.0, 91.0)   | (113.0, 91.0)
+11-25 18:39:34.440:  58  | (135.0, 91.0)   | (135.0, 91.0)
+11-25 18:39:34.440:  59  | (157.0, 91.0)   | (157.0, 91.0)
+11-25 18:39:34.440:  60  | (179.0, 91.0)   | (179.0, 91.0)
+11-25 18:39:34.440:  61  | (201.0, 91.0)   | (201.0, 91.0)
+11-25 18:39:34.440:  62  | (223.0, 91.0)   | (223.0, 91.0)
+11-25 18:39:34.440:  63  | (245.0, 91.0)   | (245.0, 91.0)
+11-25 18:39:34.440:  64  | (267.0, 91.0)   | (267.0, 91.0)
+11-25 18:39:34.440:  65  | (267.0, 113.0)  | (267.0, 113.0)
+11-25 18:39:34.440:  66  | (245.0, 113.0)  | (245.0, 113.0)
+11-25 18:39:34.440:  67  | (223.0, 113.0)  | (223.0, 113.0)
+11-25 18:39:34.440:  68  | (201.0, 113.0)  | (201.0, 113.0)
+11-25 18:39:34.440:  69  | (179.0, 113.0)  | (179.0, 113.0)
+11-25 18:39:34.440:  70  | (157.0, 113.0)  | (157.0, 113.0)
+11-25 18:39:34.440:  71  | (135.0, 113.0)  | (135.0, 113.0)
+11-25 18:39:34.440:  72  | (113.0, 113.0)  | (113.0, 113.0)
+11-25 18:39:34.440:  73  | (91.0, 113.0)   | (91.0, 113.0)
+11-25 18:39:34.440:  74  | (69.0, 113.0)   | (69.0, 113.0)
+11-25 18:39:34.440:  75  | (47.0, 113.0)   | (47.0, 113.0)
+11-25 18:39:34.440:  76  | (25.0, 113.0)   | (25.0, 113.0)
+11-25 18:39:34.440:  77  | (3.0, 113.0)    | (3.0, 113.0)
+11-25 18:39:34.440:  78  | (3.0, 135.0)    | (3.0, 135.0)
+11-25 18:39:34.440:  79  | (25.0, 135.0)   | (25.0, 135.0)
+11-25 18:39:34.440:  80  | (47.0, 135.0)   | (47.0, 135.0)
+11-25 18:39:34.440:  81  | (69.0, 135.0)   | (69.0, 135.0)
+11-25 18:39:34.440:  82  | (91.0, 135.0)   | (91.0, 135.0)
+11-25 18:39:34.440:  83  | (113.0, 135.0)  | (113.0, 135.0)
+11-25 18:39:34.440:  84  | (135.0, 135.0)  | (135.0, 135.0)
+11-25 18:39:34.440:  85  | (157.0, 135.0)  | (157.0, 135.0)
+11-25 18:39:34.440:  86  | (179.0, 135.0)  | (179.0, 135.0)
+11-25 18:39:34.440:  87  | (201.0, 135.0)  | (201.0, 135.0)
+11-25 18:39:34.440:  88  | (223.0, 135.0)  | (223.0, 135.0)
+11-25 18:39:34.440:  89  | (245.0, 135.0)  | (245.0, 135.0)
+11-25 18:39:34.440:  90  | (267.0, 135.0)  | (267.0, 135.0)
+11-25 18:39:34.440:  91  | (267.0, 157.0)  | (267.0, 157.0)
+11-25 18:39:34.440:  92  | (245.0, 157.0)  | (245.0, 157.0)
+11-25 18:39:34.440:  93  | (223.0, 157.0)  | (223.0, 157.0)
+11-25 18:39:34.440:  94  | (201.0, 157.0)  | (201.0, 157.0)
+11-25 18:39:34.440:  95  | (179.0, 157.0)  | (179.0, 157.0)
+11-25 18:39:34.440:  96  | (157.0, 157.0)  | (157.0, 157.0)
+11-25 18:39:34.440:  97  | (135.0, 157.0)  | (135.0, 157.0)
+11-25 18:39:34.440:  98  | (113.0, 157.0)  | (113.0, 157.0)
+11-25 18:39:34.440:  99  | (91.0, 157.0)   | (91.0, 157.0)
+11-25 18:39:34.440:  100 | (69.0, 157.0)   | (69.0, 157.0)
+11-25 18:39:34.440:  101 | (47.0, 157.0)   | (47.0, 157.0)
+11-25 18:39:34.440:  102 | (25.0, 157.0)   | (25.0, 157.0)
+11-25 18:39:34.440:  103 | (3.0, 157.0)    | (3.0, 157.0)
+11-25 18:39:34.440:  104 | (3.0, 179.0)    | (3.0, 179.0)
+11-25 18:39:34.440:  105 | (25.0, 179.0)   | (25.0, 179.0)
+11-25 18:39:34.440:  106 | (47.0, 179.0)   | (47.0, 179.0)
+11-25 18:39:34.440:  107 | (69.0, 179.0)   | (69.0, 179.0)
+11-25 18:39:34.440:  108 | (91.0, 179.0)   | (91.0, 179.0)
+11-25 18:39:34.440:  109 | (113.0, 179.0)  | (113.0, 179.0)
+11-25 18:39:34.440:  110 | (135.0, 179.0)  | (135.0, 179.0)
+11-25 18:39:34.440:  111 | (157.0, 179.0)  | (157.0, 179.0)
+11-25 18:39:34.440:  112 | (179.0, 179.0)  | (179.0, 179.0)
+11-25 18:39:34.440:  113 | (201.0, 179.0)  | (201.0, 179.0)
+11-25 18:39:34.440:  114 | (223.0, 179.0)  | (223.0, 179.0)
+11-25 18:39:34.440:  115 | (245.0, 179.0)  | (245.0, 179.0)
+11-25 18:39:34.440:  116 | (267.0, 179.0)  | (267.0, 179.0)
+11-25 18:39:34.440:  117 | (267.0, 201.0)  | (267.0, 201.0)
+11-25 18:39:34.440:  118 | (245.0, 201.0)  | (245.0, 201.0)
+11-25 18:39:34.440:  119 | (223.0, 201.0)  | (223.0, 201.0)
+11-25 18:39:34.440:  120 | (201.0, 201.0)  | (201.0, 201.0)
+11-25 18:39:34.440:  121 | (179.0, 201.0)  | (179.0, 201.0)
+11-25 18:39:34.440:  122 | (157.0, 201.0)  | (157.0, 201.0)
+11-25 18:39:34.440:  123 | (135.0, 201.0)  | (135.0, 201.0)
+11-25 18:39:34.440:  124 | (113.0, 201.0)  | (113.0, 201.0)
+11-25 18:39:34.440:  125 | (91.0, 201.0)   | (91.0, 201.0)
+11-25 18:39:34.440:  126 | (69.0, 201.0)   | (69.0, 201.0)
+11-25 18:39:34.440:  127 | (47.0, 201.0)   | (47.0, 201.0)
+11-25 18:39:34.440:  128 | (25.0, 201.0)   | (25.0, 201.0)
+11-25 18:39:34.440:  129 | (3.0, 201.0)    | (3.0, 201.0)
+11-25 18:39:34.440:  130 | (3.0, 223.0)    | (3.0, 223.0)
+11-25 18:39:34.440:  131 | (25.0, 223.0)   | (25.0, 223.0)
+11-25 18:39:34.440:  132 | (47.0, 223.0)   | (47.0, 223.0)
+11-25 18:39:34.440:  133 | (69.0, 223.0)   | (69.0, 223.0)
+11-25 18:39:34.440:  134 | (91.0, 223.0)   | (91.0, 223.0)
+11-25 18:39:34.440:  135 | (113.0, 223.0)  | (113.0, 223.0)
+11-25 18:39:34.441:  136 | (135.0, 223.0)  | (135.0, 223.0)
+11-25 18:39:34.441:  137 | (157.0, 223.0)  | (157.0, 223.0)
+11-25 18:39:34.441:  138 | (179.0, 223.0)  | (179.0, 223.0)
+11-25 18:39:34.441:  139 | (201.0, 223.0)  | (201.0, 223.0)
+11-25 18:39:34.441:  140 | (223.0, 223.0)  | (223.0, 223.0)
+11-25 18:39:34.441:  141 | (245.0, 223.0)  | (245.0, 223.0)
+11-25 18:39:34.441:  142 | (267.0, 223.0)  | (267.0, 223.0)
+11-25 18:39:34.441:  143 | (267.0, 245.0)  | (267.0, 245.0)
+11-25 18:39:34.441:  144 | (245.0, 245.0)  | (245.0, 245.0)
+11-25 18:39:34.441:  145 | (223.0, 245.0)  | (223.0, 245.0)
+11-25 18:39:34.441:  146 | (201.0, 245.0)  | (201.0, 245.0)
+11-25 18:39:34.441:  147 | (179.0, 245.0)  | (179.0, 245.0)
+11-25 18:39:34.441:  148 | (157.0, 245.0)  | (157.0, 245.0)
+11-25 18:39:34.441:  149 | (135.0, 245.0)  | (135.0, 245.0)
+11-25 18:39:34.441:  150 | (113.0, 245.0)  | (113.0, 245.0)
+11-25 18:39:34.441:  151 | (91.0, 245.0)   | (91.0, 245.0)
+11-25 18:39:34.441:  152 | (69.0, 245.0)   | (69.0, 245.0)
+11-25 18:39:34.441:  153 | (47.0, 245.0)   | (47.0, 245.0)
+11-25 18:39:34.441:  154 | (25.0, 245.0)   | (25.0, 245.0)
+11-25 18:39:34.441:  155 | (3.0, 245.0)    | (3.0, 245.0)
+11-25 18:39:34.441:  156 | (3.0, 267.0)    | (3.0, 267.0)
+11-25 18:39:34.441:  157 | (25.0, 267.0)   | (25.0, 267.0)
+11-25 18:39:34.441:  158 | (47.0, 267.0)   | (47.0, 267.0)
+11-25 18:39:34.441:  159 | (69.0, 267.0)   | (69.0, 267.0)
+11-25 18:39:34.441:  160 | (91.0, 267.0)   | (91.0, 267.0)
+11-25 18:39:34.441:  161 | (113.0, 267.0)  | (113.0, 267.0)
+11-25 18:39:34.441:  162 | (135.0, 267.0)  | (135.0, 267.0)
+11-25 18:39:34.441:  163 | (157.0, 267.0)  | (157.0, 267.0)
+11-25 18:39:34.441:  164 | (179.0, 267.0)  | (179.0, 267.0)
+11-25 18:39:34.441:  165 | (201.0, 267.0)  | (201.0, 267.0)
+11-25 18:39:34.441:  166 | (223.0, 267.0)  | (223.0, 267.0)
+11-25 18:39:34.441:  167 | (245.0, 267.0)  | (245.0, 267.0)
+11-25 18:39:34.441:  168 | (267.0, 267.0)  | (267.0, 267.0)
+11-25 18:39:34.444:update k0.02 for extruder
+11-25 18:39:34.444:update k0.02 for extruder1
+11-25 18:39:34.444:update k0.02 for extruder2
+11-25 18:39:34.445:update k0.02 for extruder3
+11-25 18:39:34.445:[flow_calibrator] Flow calculator server check failed: Flow calculator server is not running: FIFO not found
+11-25 18:39:34.445:[defect_detection]: cannot load necessary objects.
+11-25 18:39:34.446:Running full garbage collection and freezing
+11-25 18:39:34.469:bed_mesh: probe/mesh parameters:
+11-25 18:39:34.469:min_x :  3.0
+11-25 18:39:34.469:max_x :  267.0
+11-25 18:39:34.469:min_y :  3.0
+11-25 18:39:34.469:max_y :  267.0
+11-25 18:39:34.469:x_count :  13
+11-25 18:39:34.469:y_count :  13
+11-25 18:39:34.469:mesh_x_pps :  2
+11-25 18:39:34.469:mesh_y_pps :  2
+11-25 18:39:34.469:algo :  bicubic
+11-25 18:39:34.469:tension :  0.2
+11-25 18:39:34.469:bed_mesh: Mesh Min: (3.00,3.00) Mesh Max: (267.00,267.00)
+11-25 18:39:34.469:bed_mesh: Mesh grid size - X:37, Y:37
+11-25 18:39:34.471:Mesh X,Y: 37,37
+Mesh Offsets: X=0.0000, Y=0.0000
+Mesh Average: 0.00
+Mesh Range: min=0.0000 max=0.0000
+Interpolation Algorithm: bicubic
+Measured points:
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+
+11-25 18:39:34.485:rm power_loss info success
+11-25 18:39:34.485:Power loss module not detected, Power resume has been disabled
+11-25 18:39:34.485:toolhead: end flow calibration
+11-25 18:39:34.485:extruder: end flow calibration
+11-25 18:39:34.485:extruder: end flow calibration
+11-25 18:39:34.485:extruder: end flow calibration
+11-25 18:39:34.485:extruder: end flow calibration
+11-25 18:39:34.497:rm power_loss info success
+11-25 18:39:34.508:asyncfilereader: gcode reader registered (path=/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/gcodes/print.gcode size=4783)
+11-25 18:39:34.508:Starting SD card print, file: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/gcodes/print.gcode, position 0
+11-25 18:39:34.508:[print_task_config] set reprint info
+11-25 18:39:34.509:print_task_config: {'filament_vendor': ['NONE', 'NONE', 'NONE', 'NONE'], 'filament_type': ['NONE', 'NONE', 'NONE', 'NONE'], 'filament_sub_type': ['NONE', 'NONE', 'NONE', 'NONE'], 'filament_color': [4294967295, 4294967295, 4294967295, 4294967295], 'filament_color_rgba': ['FFFFFFFF', 'FFFFFFFF', 'FFFFFFFF', 'FFFFFFFF'], 'filament_color_multi': [{'nums': 1, 'alpha': 255, 'mode': 0, 'colors': ['FFFFFF']}, {'nums': 1, 'alpha': 255, 'mode': 0, 'colors': ['FFFFFF']}, {'nums': 1, 'alpha': 255, 'mode': 0, 'colors': ['FFFFFF']}, {'nums': 1, 'alpha': 255, 'mode': 0, 'colors': ['FFFFFF']}], 'filament_official': [False, False, False, False], 'filament_sku': [0, 0, 0, 0], 'filament_edit': [True, True, True, True], 'filament_exist': [True, True, True, True], 'filament_soft': [False, False, False, False], 'extruder_map_table': [0, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'extruders_used': [False, False, False, False], 'extruders_replenished': [0, 1, 2, 3], 'time_lapse_camera': False, 'auto_bed_leveling': False, 'flow_calibrate': False, 'flow_calib_extruders': [True, True, True, True], 'shaper_calibrate': False, 'auto_replenish_filament': True, 'replenish_ignore_color': False, 'filament_entangle_detect': False, 'filament_entangle_sen': 'medium', 'end_led_turn_off': False, 'end_unload_filament': [False, False, False, False], 'reprint_info': {'auto_bed_leveling': False, 'flow_calibrate': False, 'flow_calib_extruders': [True, True, True, True], 'time_lapse_camera': False, 'extruder_map_table': [0, 1, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'extruders_used': [False, False, False, False], 'end_unload_filament': [False, False, False, False]}}
+11-25 18:39:34.509:defect_detection: {'main_enable': True, 'sen_high_factor': 0.2, 'sen_low_factor': 0.5, 'clean_bed': {'enable': True, 'check_window': 3, 'sensitivity': 'low'}, 'noodle': {'enable': True, 'check_window': 10, 'sensitivity': 'low'}, 'residue': {'enable': False, 'check_window': 10, 'sensitivity': 'low'}, 'nozzle': {'enable': False, 'sensitivity': 'low'}}
+11-25 18:39:34.509:Success: Changed main state to PRINTING
+11-25 18:39:34.511:asyncfilereader: first pread ok (offset=0 len=4783)
+11-25 18:39:34.512:; U1 Fix Pack - Snapmaker/u1-klipper#22: Pause during B's skipped layers, then Resume (the issue's main report).
+11-25 18:39:34.512:; Generated by tests/issue22/make_gcode.py; edit that, not this file.
+11-25 18:39:34.513:;LAYER_CHANGE
+11-25 18:39:34.513:;Z:0.2
+11-25 18:39:34.554:;LAYER_CHANGE
+11-25 18:39:34.554:;Z:0.4
+11-25 18:39:34.554:Excluding object B
+11-25 18:39:34.576:;LAYER_CHANGE
+11-25 18:39:34.576:;Z:0.6
+11-25 18:39:34.591:;LAYER_CHANGE
+11-25 18:39:34.591:;Z:0.8
+11-25 18:39:34.593:[pause_resume] request pause
+11-25 18:39:34.643:Pausing toolhead to calculate stepper_x phase offset
+11-25 18:39:34.647:Pausing toolhead to calculate stepper_y phase offset
+11-25 18:39:34.647:Pausing toolhead to calculate stepper_z phase offset
+11-25 18:39:34.648:Pausing toolhead to calculate extruder phase offset
+11-25 18:39:34.648:Pausing...
+11-25 18:39:34.744:Exiting SD card print, lines=121, current_line_gcode=FIXPACK_UI_PAUSE ; the user presses Pause on the screen, file_position=3584
+11-25 18:39:34.744:file: /home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/gcodes/print.gcode
+11-25 18:39:34.762:M107: Unsupported fan ID: 3
+11-25 18:39:34.762:idle_timeout: Timeout set to 9999999999.00 s
+11-25 18:39:34.762:mcu: stepper_x:109862 stepper_y:-81062 stepper_z:-323280
+stepper: stepper_x:343.318750 stepper_y:-253.318750 stepper_z:5.600000
+kinematic: X:45.000000 Y:298.318750 Z:5.600000
+toolhead: X:45.000000 Y:300.500000 Z:5.600000 E:22.288000
+gcode: X:33.000000 Y:448.500000 Z:5.800000 E:48.432000
+gcode base: X:0.000000 Y:0.000000 Z:0.000000 E:44.352000
+gcode homing: X:0.000000 Y:0.000000 Z:0.000000
+11-25 18:39:34.763:Success: Set action code IDLE
+11-25 18:39:34.870:[pause_resume] request resume
+11-25 18:39:34.870:Resuming...
+11-25 18:39:34.874:[print_task_config] INNER_CHECK_AND_RELOAD_FILAMENT_INFO extruder_index: 0
+11-25 18:39:34.874:Success: Set action code PRINT_RESUMING
+11-25 18:39:34.874:extruder -> extruder
+11-25 18:39:34.874:Extruder extruder already active
+11-25 18:39:34.875:idle_timeout: Timeout set to 9999999999.00 s
+11-25 18:39:34.876:!! Resumes error!
+11-25 18:39:34.876:Success: Set action code IDLE
+11-25 18:39:34.877:Move out of range on Y axis: 33.000 448.500 5.800 [42.288]
+11-25 18:39:34.877:Unhandled exception during run
+Traceback (most recent call last):
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/klippy.py", line 516, in run
+    self.reactor.run()
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/reactor.py", line 292, in run
+    g_next.switch()
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/reactor.py", line 340, in _dispatch_loop
+    timeout = self._check_timers(eventtime, busy)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/reactor.py", line 158, in _check_timers
+    t.waketime = waketime = t.callback(eventtime)
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/reactor.py", line 48, in invoke
+    res = self.callback(eventtime)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/fixpack_ui.py", line 87, in <lambda>
+    self.reactor.register_callback(lambda e: self.pause_resume._handle_resume_request(None))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/pause_resume.py", line 56, in _handle_resume_request
+    self.gcode.run_script("RESUME")
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 254, in run_script
+    self._process_commands(script.split('\n'), need_ack=False)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 229, in _process_commands
+    handler(gcmd)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 144, in <lambda>
+    func = lambda params: origfunc(self._get_extended_params(params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/pause_resume.py", line 160, in cmd_RESUME
+    self.gcode.run_script_from_command("INNER_RESUME %s\n" % (rawparams))
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 251, in run_script_from_command
+    self._process_commands(script.split('\n'), need_ack=False)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 229, in _process_commands
+    handler(gcmd)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 144, in <lambda>
+    func = lambda params: origfunc(self._get_extended_params(params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/gcode_macro.py", line 189, in cmd
+    self.template.run_gcode_from_command(kwparams)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/gcode_macro.py", line 68, in run_gcode_from_command
+    self.gcode.run_script_from_command(self.render(context))
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 251, in run_script_from_command
+    self._process_commands(script.split('\n'), need_ack=False)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 229, in _process_commands
+    handler(gcmd)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 144, in <lambda>
+    func = lambda params: origfunc(self._get_extended_params(params))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/gcode_macro.py", line 189, in cmd
+    self.template.run_gcode_from_command(kwparams)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/gcode_macro.py", line 68, in run_gcode_from_command
+    self.gcode.run_script_from_command(self.render(context))
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 251, in run_script_from_command
+    self._process_commands(script.split('\n'), need_ack=False)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/gcode.py", line 229, in _process_commands
+    handler(gcmd)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/dryrun_tracer.py", line 138, in handler
+    orig(gcmd)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/gcode_move.py", line 161, in cmd_G1
+    self.move_with_transform(self.last_position, self.speed)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/exclude_object.py", line 275, in move
+    self._normal_move(newpos, speed)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/exclude_object.py", line 207, in _normal_move
+    self.next_transform.move(tx_pos, speed)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/extras/bed_mesh.py", line 238, in move
+    self.toolhead.check_move(newpos, speed, last_position=self.last_position)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/toolhead.py", line 539, in check_move
+    self.kin.check_move(move)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/kinematics/corexy.py", line 88, in check_move
+    self._check_endstops(move)
+  File "/home/hatch/workspace/u1-fixpack/out/test-212-baseline/issue22-pause-resume/klipper/klippy/kinematics/corexy.py", line 81, in _check_endstops
+    raise move.move_error(f"Move out of range on {axis_names[i]} axis")
+gcode.CommandError: {"coded": "0003-0522-0001-0013", "msg":"Move out of range on Y axis: 33.000 448.500 5.800 [42.288]"}
+11-25 18:39:34.928:Raising exception: id:522 index:1 code:13 oneshot:1 level:3 is_persistent:0, message: Move out of range on Y axis: 33.000 448.500 5.800 [42.288]
+11-25 18:39:34.928:Transition to shutdown state: Unhandled exception during run
+11-25 18:39:34.929:[asyncio] bg read failed: /home/lava/printer_data/klippy/pl_print_file_env.json err=[Errno 2] No such file or directory: '/home/lava/printer_data/klippy/pl_print_file_env.json'
+11-25 18:39:34.931:Unfreezing garbage collection
